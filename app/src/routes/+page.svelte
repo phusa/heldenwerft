@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import { each } from 'svelte/internal';
+
+    /** @type {import('./$types').PageData} */
+    export let data;
+
+  </script>
+
+
+<div class="container mx-auto mt-4">
+    {#each data.data as project}
+        {project.id}
+        {project.attributes.name}
+    {/each}
+</div>
