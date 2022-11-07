@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_layout_heroes",
+  "info": {
+    "displayName": "Hero",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "CallToAction": {
+      "displayName": "Link",
+      "type": "component",
+      "repeatable": false,
+      "component": "element.link"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

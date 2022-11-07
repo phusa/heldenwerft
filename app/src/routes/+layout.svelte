@@ -7,4 +7,6 @@
         TODO: Header
     </div>
 </nav>
-<slot />
+<div class="flex">
+    <slot />
+</div>

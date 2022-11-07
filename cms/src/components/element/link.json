@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_element_links",
+  "info": {
+    "displayName": "Link",
+    "icon": "circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Text",
+        "Button"
+      ]
+    }
+  }
+}
