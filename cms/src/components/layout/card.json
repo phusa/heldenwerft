@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_layout_cards",
+  "info": {
+    "displayName": "Card",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "Action": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.link"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Standard",
+        "Side - left",
+        "Side - right",
+        "Bullet"
+      ]
+    }
+  }
+}

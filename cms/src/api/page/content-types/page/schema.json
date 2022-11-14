@@ -14,6 +14,17 @@
   "attributes": {
     "Title": {
       "type": "string"
+    },
+    "Body": {
+      "type": "dynamiczone",
+      "components": [
+        "layout.hero",
+        "layout.card"
+      ]
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
     }
   }
 }

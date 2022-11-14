@@ -15,6 +15,9 @@
     "name": {
       "type": "string",
       "required": true
+    },
+    "Description": {
+      "type": "richtext"
     }
   }
 }
