@@ -12,13 +12,6 @@
     },
     "URL": {
       "type": "string"
-    },
-    "Type": {
-      "type": "enumeration",
-      "enum": [
-        "Text",
-        "Button"
-      ]
     }
   }
 }

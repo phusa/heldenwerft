@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_element_buttons",
+  "info": {
+    "displayName": "Button",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Primary",
+        "Secondary"
+      ]
+    }
+  }
+}

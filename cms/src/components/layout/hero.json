@@ -13,12 +13,6 @@
     "Description": {
       "type": "richtext"
     },
-    "CallToAction": {
-      "displayName": "Link",
-      "type": "component",
-      "repeatable": false,
-      "component": "element.link"
-    },
     "Image": {
       "type": "media",
       "multiple": true,
@@ -32,6 +26,11 @@
     },
     "Subtitle": {
       "type": "string"
+    },
+    "CallToAction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.button"
     }
   }
 }

@@ -4,20 +4,27 @@ Social Learning Platform
 ## Install
 ```
 git clone https://github.com/phusa/heldenwerft
-```
-
-### Frontend
-```
 cd app
 npm install
-npm run dev
-```
-### Backend
-```
-cd cms
+cd ../cms
 npm install
-npm run strapi dev
 ```
+
+Optional:
+
+Install MariaDB 10.6 (Strapi can use SQLite)
+
+change settings in ./cms/config/database.js
+
+### Run
+```
+in ./cms
+npm run strapi dev
+
+in ./app
+npm run app
+```
+
 
 ## Tech stack
 * Strapi Headless CMS
