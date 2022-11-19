@@ -2,7 +2,8 @@
   "collectionName": "components_layout_cards",
   "info": {
     "displayName": "Card",
-    "icon": "address-card"
+    "icon": "address-card",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,11 +12,6 @@
     },
     "Body": {
       "type": "richtext"
-    },
-    "Action": {
-      "type": "component",
-      "repeatable": true,
-      "component": "element.link"
     },
     "Type": {
       "type": "enumeration",

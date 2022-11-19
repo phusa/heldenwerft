@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * reference router
+ * navigation router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::reference.reference');
+module.exports = createCoreRouter('api::navigation.navigation');

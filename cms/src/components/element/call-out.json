@@ -1,15 +1,13 @@
 {
-  "collectionName": "components_element_buttons",
+  "collectionName": "components_layout_call_outs",
   "info": {
-    "displayName": "Button",
-    "icon": "ad"
+    "displayName": "CallOut",
+    "icon": "atom",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Label": {
-      "type": "string"
-    },
-    "Link": {
+    "CallOut": {
       "type": "string"
     },
     "Type": {

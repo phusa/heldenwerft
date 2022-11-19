@@ -2,7 +2,7 @@
   "collectionName": "components_layout_heroes",
   "info": {
     "displayName": "Hero",
-    "icon": "address-card",
+    "icon": "heading",
     "description": ""
   },
   "options": {},
@@ -27,10 +27,11 @@
     "Subtitle": {
       "type": "string"
     },
-    "CallToAction": {
-      "type": "component",
-      "repeatable": false,
-      "component": "element.button"
+    "CallToActionLabel": {
+      "type": "string"
+    },
+    "CallToActionLink": {
+      "type": "string"
     }
   }
 }
