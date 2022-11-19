@@ -1,9 +1,11 @@
 {
-	"/": [
-		"src/routes/+page.ts"
-	],
+	"/": [],
 	"/home": [],
 	"/project": [],
 	"/about": [],
-	"/apply": []
+	"/apply": [],
+	"/[slug]": [
+		"src/routes/[slug]/+page.ts"
+	],
+	"/application": []
 }

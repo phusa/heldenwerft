@@ -1,20 +1,3 @@
-<script>
-import {
-    each
-} from 'svelte/internal';
-
-/** @type {import('./$types').PageData} */
-export let data;
-</script>
-
-
-{#each data.data as project}
-{project.id}
-{project.attributes.title}
-{/each}
-
-
-
 
 <div class="hero">
     <div class="hero-content flex-col lg:flex-row-reverse">

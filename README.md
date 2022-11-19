@@ -10,6 +10,8 @@ cd ../cms
 npm install
 ```
 
+rename ./app/.env.example to .env and change if needed
+
 Optional:
 
 Install MariaDB 10.6 (Strapi can use SQLite)
