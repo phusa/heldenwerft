@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Projects"
+    "displayName": "Projects",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,14 @@
   "attributes": {
     "Title": {
       "type": "string"
+    },
+    "Body": {
+      "type": "dynamiczone",
+      "components": [
+        "element.call-out",
+        "element.card",
+        "element.hero"
+      ]
     }
   }
 }

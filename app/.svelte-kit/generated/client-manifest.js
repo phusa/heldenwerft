@@ -13,7 +13,7 @@ export { matchers } from './client-matchers.js';
 	"/": [2],
 	"/application": [3],
 	"/project": [4],
-	"/[slug]": [5]
+	"/[slug]": [~5]
 };
 
 			export const hooks = {

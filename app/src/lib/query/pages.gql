@@ -1,0 +1,21 @@
+query {
+    pages(filters: { Slug: { eq: "home" } }) {
+        data {
+            id
+            attributes {
+                Title
+                Slug
+                Body {
+                    __typename
+                    ... on ComponentElementHero {
+                        Title
+                        Description
+                    }
+                    ... on ComponentElementCard {
+                        Body
+                    }
+                }
+            }
+        }
+    }
+}

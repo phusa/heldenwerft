@@ -5,7 +5,7 @@
 	"/about": [],
 	"/apply": [],
 	"/[slug]": [
-		"src/routes/[slug]/+page.ts"
+		"src/routes/[slug]/+page.server.ts"
 	],
 	"/application": []
 }
