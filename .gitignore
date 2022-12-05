@@ -118,8 +118,8 @@ build
 # Svelte
 ############################
 
-/build
-/.svelte-kit
+/app/build
+/app/.svelte-kit
 /package
 .env.*
 !.env.example

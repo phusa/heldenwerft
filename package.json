@@ -11,8 +11,5 @@
     "author": {
         "name": "Phillip Ardila"
     },
-    "license": "MIT",
-    "devDependencies": {
-        "concurrently": "^7.5.0"
-    }
+    "license": "MIT"
 }
