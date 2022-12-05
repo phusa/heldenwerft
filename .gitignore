@@ -111,7 +111,7 @@ license.txt
 exports
 *.cache
 dist
-build
+/cms/build
 .strapi-updater.json
 
 ############################
@@ -120,6 +120,6 @@ build
 
 /app/build
 /app/.svelte-kit
-/package
+/app/package
 .env.*
 !.env.example
