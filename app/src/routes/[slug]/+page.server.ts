@@ -30,7 +30,7 @@ const query = `query {
   }`;
 
   // TODO move url to env, use API token
-    const response =await fetch('http://127.0.0.1:1337/graphql',{
+    const response =await fetch('http://cms.heldenwerft.org/graphql',{
  			method: 'POST',
  			headers: {
                 'Content-Type':'application/json'
