@@ -5,5 +5,5 @@ import CardGrid from '$lib/component/layout/cardgrid.svelte';
 export default {
     'ComponentElementCard' : Card,
     'ComponentElementHero' : Hero,
-    'ComponentLayoutHeroCardGrid' : CardGrid
+    'ComponentLayoutCardGrid' : CardGrid
 }

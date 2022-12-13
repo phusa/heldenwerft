@@ -1,5 +1,8 @@
 <script>
+    import Card from '$lib/component/element/card.svelte';
     export let content;
 </script>
 
-<h1>TBD</h1>
+{#each content.Card as card}
+    <Card content={card} />
+{/each}
