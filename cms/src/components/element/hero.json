@@ -1,36 +1,33 @@
 {
-  "collectionName": "components_layout_heroes",
+  "collectionName": "components_element_heroes",
   "info": {
-    "displayName": "Hero",
-    "icon": "heading",
-    "description": ""
+    "displayName": "Hero"
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "Strap": {
       "type": "string"
     },
-    "Description": {
-      "type": "richtext"
-    },
-    "Image": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "Title": {
+      "type": "string"
     },
     "Subtitle": {
       "type": "string"
     },
-    "CallToActionLabel": {
+    "Text": {
+      "type": "text"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ButtonLabel": {
       "type": "string"
     },
-    "CallToActionLink": {
+    "ButtonLink": {
       "type": "string"
     }
   }

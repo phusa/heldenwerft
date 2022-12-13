@@ -18,9 +18,9 @@
     "Body": {
       "type": "dynamiczone",
       "components": [
-        "element.hero",
-        "element.card",
-        "element.call-out"
+        "element.call-out",
+        "layout.card-grid",
+        "element.hero"
       ]
     },
     "Slug": {

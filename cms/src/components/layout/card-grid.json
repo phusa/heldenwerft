@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_layout_card_grids",
+  "info": {
+    "displayName": "Card Grid",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Style": {
+      "type": "enumeration",
+      "enum": [
+        "White Background",
+        "Grey Background"
+      ]
+    },
+    "Card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.card"
+    }
+  }
+}

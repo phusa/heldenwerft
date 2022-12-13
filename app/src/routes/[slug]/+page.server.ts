@@ -1,11 +1,9 @@
 import type { PageServerLoad } from './$types';
+import { env } from '$env/dynamic/public';
 
 export const load: PageServerLoad = async ({ params}) => {
-    
-  // TODO: dynamic slug
-  // TODO move to gql file
+
   // TODO secure slug against injections
-  console.log(params.slug);
 const query = `query {
     pages(filters: { Slug: { eq: "${params.slug}" } }) {
       data {
@@ -16,12 +14,25 @@ const query = `query {
           Body {
             __typename
             ... on ComponentElementHero {
+              Strap
               Title
-              Description
+              Subtitle
+              Text
+              Image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
             }
-            ... on ComponentElementCard {
-              Header
-              Body
+            ... on ComponentLayoutCardGrid {
+              Style
+              Card {
+                Type
+                Header
+                Body
+              }
             }
           }
         }
@@ -29,8 +40,7 @@ const query = `query {
     }
   }`;
 
-  // TODO move url to env, use API token
-    const response =await fetch('http://cms.heldenwerft.org/graphql',{
+    const response =await fetch(env.PUBLIC_GQL_URL,{
  			method: 'POST',
  			headers: {
                 'Content-Type':'application/json'
@@ -40,8 +50,8 @@ const query = `query {
  			})
  		});
  
-    const responseJson = await response.json()
-
+    const responseJson = await response.json();
+    
     // TODO secure against empty result / decent error page
     return(responseJson.data.pages.data[0].attributes);
 

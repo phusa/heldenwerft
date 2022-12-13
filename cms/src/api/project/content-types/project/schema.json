@@ -12,16 +12,28 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "Name": {
       "type": "string"
     },
-    "Body": {
-      "type": "dynamiczone",
-      "components": [
-        "element.call-out",
-        "element.card",
-        "element.hero"
-      ]
+    "Summary": {
+      "type": "text",
+      "maxLength": 1000,
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Teaser": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Creator": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }

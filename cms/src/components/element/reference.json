@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_element_references",
+  "info": {
+    "displayName": "Reference",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project"
+    }
+  }
+}
