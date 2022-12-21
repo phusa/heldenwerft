@@ -21,6 +21,13 @@
         "Side - right",
         "Bullet"
       ]
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

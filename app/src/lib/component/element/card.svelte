@@ -1,11 +1,15 @@
 <script>
+    import { env } from '$env/dynamic/public';
     export let content;
     console.log(content)
 </script>
 
 
 <div class="card card-side bg-base-100 shadow-xl">
-    <figure><img src="https://placeimg.com/200/280/arch" alt="Movie"/></figure>
+
+    <figure><img src="{env.PUBLIC_CMS_URL}{content.Image.data.attributes.url}" alt=""/></figure>
+
+    
     <div class="card-body">
       <h2 class="card-title">{content.Header}</h2>
       <p>{content.Body}</p>

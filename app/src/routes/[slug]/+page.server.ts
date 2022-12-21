@@ -32,6 +32,13 @@ const query = `query {
                 Type
                 Header
                 Body
+                Image {
+                  data {
+                    attributes {
+                      url
+                    }
+                  }
+                }
               }
             }
           }
