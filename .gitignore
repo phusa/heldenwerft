@@ -112,6 +112,7 @@ exports
 *.cache
 dist
 /cms/build
+/cms/public/uploads
 .strapi-updater.json
 
 ############################

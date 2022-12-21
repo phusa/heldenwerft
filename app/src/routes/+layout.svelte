@@ -17,9 +17,9 @@ import "../app.css";
             </ul>
         </div>
         <div class="navbar-end">
-            <div class="form-control">
+            <!-- <div class="form-control">
                 <input type="text" placeholder="Suche" class="input input-bordered" />
-            </div>
+            </div> -->
             <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
             <div class="dropdown dropdown-end">
                 <label for="" tabindex="0" class="btn btn-ghost btn-circle avatar">
