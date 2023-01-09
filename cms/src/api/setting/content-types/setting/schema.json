@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "singularName": "setting",
+    "pluralName": "settings",
+    "displayName": "Einstellungen",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Imprint": {
+      "type": "richtext"
+    },
+    "Privacy": {
+      "type": "richtext"
+    },
+    "SocialMediaLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.social-media-link"
+    },
+    "ContactDetails": {
+      "type": "richtext"
+    },
+    "ApplicationFormRecipients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

@@ -7,10 +7,10 @@
   },
   "options": {},
   "attributes": {
-    "Header": {
-      "type": "string"
+    "Title": {
+      "type": "text"
     },
-    "Body": {
+    "Text": {
       "type": "richtext"
     },
     "Type": {
@@ -23,11 +23,12 @@
       ]
     },
     "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

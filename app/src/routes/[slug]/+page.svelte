@@ -3,6 +3,9 @@
     import componentMap from '$lib/component/all';
     export let data: PageData;
 
+
+    console.log(data);
+
 </script>
 
 {#each data.Body as content}
@@ -11,4 +14,3 @@
         content={content}
     />
 {/each}
-

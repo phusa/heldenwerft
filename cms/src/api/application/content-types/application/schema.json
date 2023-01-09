@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applications",
+  "info": {
+    "singularName": "application",
+    "pluralName": "applications",
+    "displayName": "Bewerbungen",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Neuer Internetauftritt",
+        "Website Feature Entwickeln",
+        "Website Relaunch"
+      ]
+    },
+    "TypeFurther": {
+      "type": "text"
+    },
+    "Idea": {
+      "type": "text"
+    },
+    "Start": {
+      "type": "date"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Eingereicht",
+        "In Prüfung",
+        "Rückfragen offen",
+        "Abgelehnt",
+        "Angenommen"
+      ]
+    },
+    "Reason": {
+      "type": "text"
+    }
+  }
+}

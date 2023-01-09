@@ -30,8 +30,8 @@ const query = `query {
               Style
               Card {
                 Type
-                Header
-                Body
+                Title
+                Text
                 Image {
                   data {
                     attributes {
@@ -58,6 +58,7 @@ const query = `query {
  		});
  
     const responseJson = await response.json();
+
     
     // TODO secure against empty result / decent error page
     return(responseJson.data.pages.data[0].attributes);

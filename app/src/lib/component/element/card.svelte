@@ -1,7 +1,6 @@
 <script>
     import { env } from '$env/dynamic/public';
     export let content;
-    console.log(content)
 </script>
 
 
@@ -11,8 +10,8 @@
 
     
     <div class="card-body">
-      <h2 class="card-title">{content.Header}</h2>
-      <p>{content.Body}</p>
+      <h2 class="card-title">{content.Title}</h2>
+      <p>{content.Text}</p>
       <div class="card-actions justify-end">
         <button class="btn btn-primary">Mehr</button>
       </div>

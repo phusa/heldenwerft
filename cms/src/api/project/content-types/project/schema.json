@@ -4,7 +4,7 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Projects",
+    "displayName": "Projekte",
     "description": ""
   },
   "options": {
@@ -24,16 +24,23 @@
       "type": "text"
     },
     "Teaser": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
-    "Creator": {
+    "users": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "plugin::users-permissions.user"
+    },
+    "organisationens": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organization.organization",
+      "mappedBy": "Projekte"
     }
   }
 }

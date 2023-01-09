@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_element_testimonial_cards",
+  "info": {
+    "displayName": "Testimonial",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "testimonial": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::testimonial.testimonial"
+    }
+  }
+}

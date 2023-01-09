@@ -4,7 +4,7 @@
   "info": {
     "singularName": "page",
     "pluralName": "pages",
-    "displayName": "Pages",
+    "displayName": "Seiten",
     "description": ""
   },
   "options": {
@@ -20,7 +20,11 @@
       "components": [
         "element.call-out",
         "layout.card-grid",
-        "element.hero"
+        "element.hero",
+        "element.reference",
+        "element.testimonial-card",
+        "element.card",
+        "element.faq"
       ]
     },
     "Slug": {

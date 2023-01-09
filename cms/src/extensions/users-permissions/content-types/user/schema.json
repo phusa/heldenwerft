@@ -62,6 +62,17 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
+    },
+    "organizations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organization.organization",
+      "mappedBy": "user"
+    },
+    "projekte": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
     }
   }
 }
