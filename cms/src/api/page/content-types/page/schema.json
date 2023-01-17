@@ -19,7 +19,6 @@
       "type": "dynamiczone",
       "components": [
         "element.call-out",
-        "layout.card-grid",
         "element.hero",
         "element.reference",
         "element.testimonial-card",

@@ -26,21 +26,6 @@ const query = `query {
                 }
               }
             }
-            ... on ComponentLayoutCardGrid {
-              Style
-              Card {
-                Type
-                Title
-                Text
-                Image {
-                  data {
-                    attributes {
-                      url
-                    }
-                  }
-                }
-              }
-            }
           }
         }
       }
@@ -58,7 +43,6 @@ const query = `query {
  		});
  
     const responseJson = await response.json();
-
     
     // TODO secure against empty result / decent error page
     return(responseJson.data.pages.data[0].attributes);
