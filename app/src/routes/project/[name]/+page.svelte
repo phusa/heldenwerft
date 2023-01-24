@@ -3,7 +3,6 @@
     import { PUBLIC_CMS_URL } from '$env/static/public';
     export let data: PageData;
     let project = (data.projects.data[0]) ? data.projects.data[0].attributes : null;
-    console.log(project.Media)
 </script>
 {#if project}
     {#if project.Teaser}
