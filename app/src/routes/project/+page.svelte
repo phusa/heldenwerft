@@ -1,7 +1,26 @@
 <script lang="ts">
     import type { PageData } from './$types';
+    import { env } from '$env/dynamic/public';
     export let data: PageData;
-
-    console.log(data.pages);
 </script>
-<h1>TODO: Project list & search</h1>
+<h1>Projekte</h1>
+
+<div class="flex">
+{#each data.projects.data as project}
+
+    <div class="card lg:card-side">
+        {#if project.attributes.Teaser}
+            <figure>
+                <img src="{env.PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.url}" alt=""/>
+            </figure>
+        {/if}
+        <div class="card-body">
+            <h2 class="card-title">{project.attributes.Name}</h2>
+            {#if project.attributes.Summary}
+                <p>{project.attributes.Summary}</p>
+            {/if}
+            <a href="/project/{project.attributes.Slug}">Projektdetails</a>
+        </div>
+    </div>
+{/each}
+</div>

@@ -6,13 +6,14 @@ import "../app.css";
     <div class="navbar bg-base-100">
         <div class="navbar-start">
             <a href="/">
-                <img src="logo-euf.svg" alt="" width="200">
+                <img src="/logo-euf.svg" alt="" width="200">
             </a>
         </div>
         <div class="navbar-center">
             <ul class="menu menu-horizontal p-0">
                 <li><a href="/">Organisationen</a></li>
                 <li><a href="/">Studenten</a></li>
+                <li><a href="/project">Projekte</a></li>
                 <li><a href="/">Kontakt</a></li>
             </ul>
         </div>

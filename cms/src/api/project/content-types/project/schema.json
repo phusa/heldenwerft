@@ -13,7 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "Name": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": false
     },
     "Summary": {
       "type": "text",
@@ -21,7 +23,8 @@
       "required": true
     },
     "Description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "Teaser": {
       "type": "media",
@@ -31,16 +34,53 @@
         "images"
       ]
     },
-    "users": {
+    "Users": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "plugin::users-permissions.user"
     },
-    "organisationens": {
+    "Organisations": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::organization.organization",
       "mappedBy": "Projekte"
+    },
+    "Testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.testimonial-card"
+    },
+    "Students": {
+      "type": "integer"
+    },
+    "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Highlight": {
+      "type": "boolean"
+    },
+    "Semester": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::semester.semester"
+    },
+    "Category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
     }
   }
 }

@@ -6,10 +6,19 @@
   },
   "options": {},
   "attributes": {
-    "testimonial": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::testimonial.testimonial"
+    "Testimonial": {
+      "type": "text"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
