@@ -1,13 +1,13 @@
 <script lang="ts">
     import type { PageData } from './$types';
-    import { env } from '$env/dynamic/public';
+    import { PUBLIC_CMS_URL } from '$env/static/public';
     export let data: PageData;
     let project = (data.projects.data[0]) ? data.projects.data[0].attributes : null;
     console.log(project.Media)
 </script>
 {#if project}
     {#if project.Teaser}
-        <img src="{env.PUBLIC_CMS_URL}{project.Teaser.data.attributes.url}" alt=""/>
+        <img src="{PUBLIC_CMS_URL}{project.Teaser.data.attributes.url}" alt=""/>
     {/if}
     {#if project.Semester}scsd
         {project.Semester.data.attributes.Semester}
@@ -35,7 +35,7 @@
     {#each project.Testimonials as testimonial}
         {#if testimonial.Avatar}
             <figure>
-                <img src="{env.PUBLIC_CMS_URL}{testimonial.Avatar.data.attributes.formats.thumbnail.url}" alt="" />
+                <img src="{PUBLIC_CMS_URL}{testimonial.Avatar.data.attributes.formats.thumbnail.url}" alt="" />
             </figure>
         {/if}
         {testimonial.Testimonial}
@@ -46,12 +46,12 @@
         <div class="carousel rounded-box">
             {#each project.Media.data as pic}
                 <div class="carousel-item h-full">
-                    <label for="pic-modal-{pic.id}"><img src="{env.PUBLIC_CMS_URL}{pic.attributes.formats.small.url}" alt="" class="max-h-60 mr-3" /></label>
+                    <label for="pic-modal-{pic.id}"><img src="{PUBLIC_CMS_URL}{pic.attributes.formats.small.url}" alt="" class="max-h-60 mr-3" /></label>
                 </div>
                 <input type="checkbox" id="pic-modal-{pic.id}" class="modal-toggle" />
                 <label for="pic-modal-{pic.id}" class="modal cursor-pointer">
                 <label class="modal-box relative" for="">
-                    <img src="{env.PUBLIC_CMS_URL}{pic.attributes.url}" alt="" />
+                    <img src="{PUBLIC_CMS_URL}{pic.attributes.url}" alt="" />
                 </label>
                 </label>
             {/each}

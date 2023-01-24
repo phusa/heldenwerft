@@ -1,9 +1,9 @@
-import { env } from '$env/dynamic/public';
+import { PUBLIC_GQL_URL } from '$env/static/public';
 
 export const Client = async (query: String) => {
 
     const response = await fetch(
-        env.PUBLIC_GQL_URL,
+        PUBLIC_GQL_URL,
         {
             method: 'POST',
             headers: {

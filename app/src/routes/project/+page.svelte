@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { PageData } from './$types';
-    import { env } from '$env/dynamic/public';
+    import { PUBLIC_CMS_URL } from '$env/static/public';
     export let data: PageData;
 </script>
 <h1>Projekte</h1>
@@ -11,7 +11,7 @@
     <div class="card lg:card-side">
         {#if project.attributes.Teaser}
             <figure>
-                <img src="{env.PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.formats.small.url}" alt=""/>
+                <img src="{PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.formats.small.url}" alt=""/>
             </figure>
         {/if}
         <div class="card-body">
