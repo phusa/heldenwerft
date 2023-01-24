@@ -14,6 +14,7 @@ export const load: PageServerLoad = async ({ params }) => {
               data {
                 attributes {
                   url
+                  formats
                 }
               }
             }

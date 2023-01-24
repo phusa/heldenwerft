@@ -11,7 +11,7 @@
     <div class="card lg:card-side">
         {#if project.attributes.Teaser}
             <figure>
-                <img src="{env.PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.url}" alt=""/>
+                <img src="{env.PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.formats.small.url}" alt=""/>
             </figure>
         {/if}
         <div class="card-body">

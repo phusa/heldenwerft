@@ -29,6 +29,7 @@ export const load: PageServerLoad = async ({ params }) => {
               data {
                 attributes {
                   url
+                  formats
                 }
               }
             }
@@ -41,6 +42,24 @@ export const load: PageServerLoad = async ({ params }) => {
             }
             Testimonials {
               Name
+              Testimonial
+              Avatar {
+                data {
+                  attributes {
+                    url
+                    formats
+                  }
+                }
+              }
+            }
+            Media {
+              data {
+                id
+                attributes {
+                  url
+                  formats
+                }
+              }
             }
             Organisations {
               data {
