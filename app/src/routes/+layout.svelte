@@ -3,14 +3,14 @@ import "../app.css";
 </script>
 
 <div class="container mx-auto">
-    <div class="navbar bg-base-100">
+    <div class="navbar h-24">
         <div class="navbar-start">
             <a href="/">
                 <img src="/logo-euf.svg" alt="" width="200">
             </a>
         </div>
         <div class="navbar-center">
-            <ul class="menu menu-horizontal p-0">
+            <ul class="menu menu-horizontal">
                 <li><a href="/">Organisationen</a></li>
                 <li><a href="/">Studenten</a></li>
                 <li><a href="/project">Projekte</a></li>
@@ -44,4 +44,22 @@ import "../app.css";
 
     <slot />
 
+<footer class="footer p-10 mt-20 bg-primary text-neutral-content">
+  <div>
+    <p>@2023 Europa-Universität Flensburg (EUF)</p>
+  </div> 
+  <div>
+    <a class="link link-hover">Youtube</a>
+    <a class="link link-hover">Facebook</a>
+    <a class="link link-hover">LinkedIn</a>
+    <a class="link link-hover">Instagram</a>
+  </div> 
+  <div>
+    <a class="link link-hover">Presse</a>
+    <a class="link link-hover">Impressum</a>
+    <a class="link link-hover">Datenschutz</a>
+    <a class="link link-hover">Barrierefreiheit</a>
+    <a class="link link-hover">Kontakt</a>
+  </div>
+</footer>
 </div>
