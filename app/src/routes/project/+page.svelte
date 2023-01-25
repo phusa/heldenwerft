@@ -6,7 +6,7 @@
 <h2 class="pt-5 pb-5 text-3xl font-bold">Umgesetzte Projekte</h2>
 <div class="flex">
 {#each data.projects.data as project}
-    <div class="card w-96 bg-base-100 shadow-xl">
+    <div class="card w-96 bg-base-100 shadow">
         {#if project.attributes.Teaser.data}
             <figure>
                 <img src="{PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.formats.small.url}" alt="" class="object-contain"/>
@@ -17,8 +17,8 @@
             {#if project.attributes.Summary}
                 <p>{project.attributes.Summary}</p>
             {/if}
-            <div class="card-actions justify-end">
-                <a href="/project/{project.attributes.Slug}"><button class="btn btn-primary">Zum Projekt</button></a>
+            <div class="card-actions justify-end ">
+                <a href="/project/{project.attributes.Slug}"><button class="btn btn-primary text-white">Zum Projekt</button></a>
           </div>
         </div>
     </div>

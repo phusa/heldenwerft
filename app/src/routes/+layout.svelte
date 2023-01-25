@@ -1,8 +1,9 @@
 <script>
 import "../app.css";
 </script>
-
-<div class="container mx-auto">
+<div class="flex flex-col h-screen justify-between">
+<div class="container  ml-auto mr-auto">
+    <header>
     <div class="navbar h-24">
         <div class="navbar-start">
             <a href="/">
@@ -40,11 +41,13 @@ import "../app.css";
                 </ul>
             </div>
         </div>
-    </div>
-
-    <slot />
-
-<footer class="footer p-10 mt-20 bg-primary text-neutral-content">
+    </header>
+    <main>
+        <slot />
+    </main>
+</div>
+<div class="p-10 mt-20 bg-primary">
+<footer class="footer text-neutral-content container ml-auto mr-auto">
   <div>
     <p>@2023 Europa-Universität Flensburg (EUF)</p>
   </div> 
@@ -62,4 +65,5 @@ import "../app.css";
     <a class="link link-hover" href="/">Kontakt</a>
   </div>
 </footer>
+</div>
 </div>
