@@ -2,4 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom CSS */
+/* Markdown CSS that cannot be styled with tailwind */
+
+.markdown p {
+    margin-bottom: 1rem;
+}

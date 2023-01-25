@@ -3,12 +3,9 @@
     import { PUBLIC_CMS_URL } from '$env/static/public';
     export let data: PageData;
 </script>
-<article class="prose p-4">
-    <h2>Umgesetzte Projekte</h2>
-</article>
+<h2 class="pt-5 pb-5 text-3xl font-bold">Umgesetzte Projekte</h2>
 <div class="flex">
 {#each data.projects.data as project}
-
     <div class="card w-96 bg-base-100 shadow-xl">
         {#if project.attributes.Teaser.data}
             <figure>

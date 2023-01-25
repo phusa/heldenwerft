@@ -5,6 +5,7 @@
     export let data: PageData;
     let project = (data.projects.data[0]) ? data.projects.data[0].attributes : null;
 </script>
+
 {#if project}
     <figure class="h-64 overflow-hidden">
         {#if project.Teaser}
@@ -54,11 +55,11 @@
         {/if}
     </div>
 
-    <article class="prose mt-14">
-        <h1 class="">{project.Name}</h1>
-        <h2>{project.Summary}</h2>
+    <article class="mt-10">
+        <h1 class="text-3xl font-bold">{project.Name}</h1>
+        <h2 class="text-xl mt-2">{project.Summary}</h2>
         {#if project.Description}
-            <div><SvelteMarkdown source={project.Description} /></div>
+            <div class="mt-10 markdown"><SvelteMarkdown source={project.Description} /></div>
         {/if}
     </article>
 
@@ -71,7 +72,7 @@
                     </figure>
                 {/if}
                 <div class="card-body">
-                    <p class="text-3xl font-bold">"{testimonial.Testimonial}"</p>
+                    <p class="text-2xl font-bold">"{testimonial.Testimonial}"</p>
                     <p>{testimonial.Name}</p>
                 </div>
             </div>
@@ -96,4 +97,4 @@
 
 {:else}
     <h1>Projekt nicht gefunden</h1>
-{/if} 
+{/if}
