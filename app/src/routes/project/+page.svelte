@@ -8,8 +8,8 @@
 <div class="flex">
 {#each data.projects.data as project}
 
-    <div class="card lg:card-side">
-        {#if project.attributes.Teaser}
+    <div class="card">
+        {#if project.attributes.Teaser.data}
             <figure>
                 <img src="{PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.formats.small.url}" alt=""/>
             </figure>

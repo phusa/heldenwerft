@@ -6,35 +6,35 @@
 </script>
 {#if project}
     {#if project.Teaser}
-        <img src="{PUBLIC_CMS_URL}{project.Teaser.data.attributes.url}" alt=""/>
-    {/if}
-    {#if project.Semester}scsd
-        {project.Semester.data.attributes.Semester}
+        <img src="{PUBLIC_CMS_URL}{project.Teaser.data.attributes.formats.large.url}" alt="" class="w-full object-none h-48"/>
     {/if}
 
-    {#if project.Students}
-        {project.Students} Studierende
-    {/if}
+    <div class="flex bg-base-400">
+        {#if project.Semester.data}
+            {project.Semester.data.attributes.Semester}
+        {/if}
 
-    {#if project.Category}
-        {project.Category.data.attributes.Category}
-    {/if}
+        {#if project.Students}
+            {project.Students} Studierende
+        {/if}
 
-    <h1>{project.Name}</h1>
-    <h2>{project.Summary}</h2>
-    
-    {#if project.Description}
-        <div>{project.Description}</div>
-    {/if}
+        {#if project.Category.data}
+            {project.Category.data.attributes.Category}
+        {/if}
+    </div>
 
-    {#if project.Description}
-        <div>{project.Description}</div>
-    {/if}
+    <article class="prose">
+        <h1 class="">{project.Name}</h1>
+        <h2>{project.Summary}</h2>
+        {#if project.Description}
+            <div>{project.Description}</div>
+        {/if}
+    </article>
 
     {#each project.Testimonials as testimonial}
         {#if testimonial.Avatar}
             <figure>
-                <img src="{PUBLIC_CMS_URL}{testimonial.Avatar.data.attributes.formats.thumbnail.url}" alt="" />
+                <img src="{PUBLIC_CMS_URL}{testimonial.Avatar.data.attributes.formats.thumbnail.url}" alt=""  class="mask mask-circle"/>
             </figure>
         {/if}
         {testimonial.Testimonial}

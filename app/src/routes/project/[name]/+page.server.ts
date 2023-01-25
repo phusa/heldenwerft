@@ -2,7 +2,8 @@ import type { PageServerLoad } from './$types';
 import { Client } from '$lib/client';
 
 export const load: PageServerLoad = async ({ params }) => {
-  return(Client(
+
+  let project = Client(
     `query {
       projects (filters: { Name: { eq: "${params.name}" } }) {
         data {
@@ -30,13 +31,6 @@ export const load: PageServerLoad = async ({ params }) => {
                 attributes {
                   url
                   formats
-                }
-              }
-            }
-            Media {
-              data {
-                attributes {
-                  url
                 }
               }
             }
@@ -73,5 +67,7 @@ export const load: PageServerLoad = async ({ params }) => {
         }
       }
   }`
-  ));
+  );
+
+  return(project);
 };

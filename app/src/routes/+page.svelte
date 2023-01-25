@@ -1,10 +1,3 @@
-
-<script>
-    import Wave from '$lib/component/element/wave.svelte'
-</script>
-
-<Wave />
-
 <div class="hero">
     <div class="hero-content flex-col lg:flex-row-reverse">
         <img src="https://placeimg.com/600/400/people" class="" alt=""/>
