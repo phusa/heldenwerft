@@ -45,7 +45,7 @@ const query = `query {
     const responseJson = await response.json();
     
     // TODO secure against empty result / decent error page
-    return(responseJson.data.pages.data[0].attributes);
+    return(responseJson.data.pages.data);
 
 
 
