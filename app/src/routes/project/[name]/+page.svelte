@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { PageData } from './$types';
     import { PUBLIC_CMS_URL } from '$env/static/public';
+    import SvelteMarkdown from 'svelte-markdown';
     export let data: PageData;
     let project = (data.projects.data[0]) ? data.projects.data[0].attributes : null;
 </script>
@@ -57,7 +58,7 @@
         <h1 class="">{project.Name}</h1>
         <h2>{project.Summary}</h2>
         {#if project.Description}
-            <div>{project.Description}</div>
+            <div><SvelteMarkdown source={project.Description} /></div>
         {/if}
     </article>
 

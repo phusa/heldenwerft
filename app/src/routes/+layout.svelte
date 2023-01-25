@@ -49,17 +49,17 @@ import "../app.css";
     <p>@2023 Europa-Universität Flensburg (EUF)</p>
   </div> 
   <div>
-    <a class="link link-hover">Youtube</a>
-    <a class="link link-hover">Facebook</a>
-    <a class="link link-hover">LinkedIn</a>
-    <a class="link link-hover">Instagram</a>
+    <a class="link link-hover" href="/">Youtube</a>
+    <a class="link link-hover" href="/">Facebook</a>
+    <a class="link link-hover" href="/">LinkedIn</a>
+    <a class="link link-hover" href="/">Instagram</a>
   </div> 
   <div>
-    <a class="link link-hover">Presse</a>
-    <a class="link link-hover">Impressum</a>
-    <a class="link link-hover">Datenschutz</a>
-    <a class="link link-hover">Barrierefreiheit</a>
-    <a class="link link-hover">Kontakt</a>
+    <a class="link link-hover" href="/">Presse</a>
+    <a class="link link-hover" href="/">Impressum</a>
+    <a class="link link-hover" href="/">Datenschutz</a>
+    <a class="link link-hover" href="/">Barrierefreiheit</a>
+    <a class="link link-hover" href="/">Kontakt</a>
   </div>
 </footer>
 </div>
