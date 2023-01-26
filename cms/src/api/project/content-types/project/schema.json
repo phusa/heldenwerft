@@ -22,10 +22,6 @@
       "maxLength": 1000,
       "required": true
     },
-    "Description": {
-      "type": "text",
-      "required": true
-    },
     "Teaser": {
       "type": "media",
       "multiple": false,
@@ -81,6 +77,9 @@
       "type": "uid",
       "targetField": "Name",
       "required": true
+    },
+    "Description": {
+      "type": "richtext"
     }
   }
 }

@@ -6,7 +6,10 @@
     "scripts": {
         "dev": "concurrently npm:dev.*",
         "dev.strapi": "cd cms && npm run strapi develop",
-        "dev.svelte": "cd app && npm run dev"
+        "dev.svelte": "cd app && npm run dev",
+        "inst": "concurrently npm:inst.*",
+        "inst.strapi": "cd cms && npm install",
+        "inst.svelte": "cd app && npm install"
     },
     "author": {
         "name": "Phillip Ardila"

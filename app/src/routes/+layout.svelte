@@ -1,16 +1,17 @@
 <script>
 import "../app.css";
 </script>
-
-<div class="container mx-auto">
-    <div class="navbar bg-base-100">
+<div class="flex flex-col h-screen justify-between">
+<div class="container  ml-auto mr-auto">
+    <header>
+    <div class="navbar h-24">
         <div class="navbar-start">
             <a href="/">
                 <img src="/logo-euf.svg" alt="" width="200">
             </a>
         </div>
         <div class="navbar-center">
-            <ul class="menu menu-horizontal p-0">
+            <ul class="menu menu-horizontal">
                 <li><a href="/">Organisationen</a></li>
                 <li><a href="/">Studenten</a></li>
                 <li><a href="/project">Projekte</a></li>
@@ -40,8 +41,29 @@ import "../app.css";
                 </ul>
             </div>
         </div>
-    </div>
-
-    <slot />
-
+    </header>
+    <main>
+        <slot />
+    </main>
+</div>
+<div class="p-10 mt-20 bg-primary">
+<footer class="footer text-neutral-content container ml-auto mr-auto">
+  <div>
+    <p>@2023 Europa-Universität Flensburg (EUF)</p>
+  </div> 
+  <div>
+    <a class="link link-hover" href="/">Youtube</a>
+    <a class="link link-hover" href="/">Facebook</a>
+    <a class="link link-hover" href="/">LinkedIn</a>
+    <a class="link link-hover" href="/">Instagram</a>
+  </div> 
+  <div>
+    <a class="link link-hover" href="/">Presse</a>
+    <a class="link link-hover" href="/">Impressum</a>
+    <a class="link link-hover" href="/">Datenschutz</a>
+    <a class="link link-hover" href="/">Barrierefreiheit</a>
+    <a class="link link-hover" href="/">Kontakt</a>
+  </div>
+</footer>
+</div>
 </div>
