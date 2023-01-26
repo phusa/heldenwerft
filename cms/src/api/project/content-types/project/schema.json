@@ -75,8 +75,8 @@
     },
     "Slug": {
       "type": "uid",
-      "targetField": "Name",
-      "required": true
+      "required": true,
+      "targetField": "Name"
     },
     "Description": {
       "type": "richtext"
