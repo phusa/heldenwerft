@@ -15,7 +15,7 @@
     padding-top: 12%;
     top: -5px;
     left: 0;
-    background-image: url(wave.png);
+    background-image: url(/wave.png);
     background-repeat: repeat-x;
     background-size: 100%;
     animation: wave 8s linear infinite;
@@ -27,7 +27,7 @@
     padding-top: 12%;
     top: -5px;
     left: 0;
-    background-image: url(wave.png);
+    background-image: url(/wave.png);
     background-repeat: repeat-x;
     background-size: 100%;
     opacity: .2;
@@ -40,7 +40,7 @@
     padding-top: 12%;
     top: -5px;
     left: 0;
-    background-image: url(wave.png);
+    background-image: url(/wave.png);
     background-repeat: repeat-x;
     background-size: 100%;
     opacity: .8;
