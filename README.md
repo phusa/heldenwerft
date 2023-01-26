@@ -1,58 +1,55 @@
 # Heldenwerft
 Social Learning Platform
 
-## Install
-```
-git clone https://github.com/phusa/heldenwerft
-cd app
-npm install
-cd ../cms
-npm install
-```
-
-rename ./app/.env.example to .env and change if needed
-
-Optional:
-
-Install MariaDB 10.6 (Strapi can use SQLite)
-
-change settings in ./cms/config/database.js
-
-### Run
-```
-in ./cms
-npm run strapi dev
-
-in ./app
-npm run app
-```
-
 
 ## Tech stack
 * Strapi Headless CMS
 * Svelte + Sveltekit
 * DaisyUI + Tailwind
 
-## Components
-### Content
-* Hero
-* Gallery
-* Carousel
-* Call out
-* Card
-* Accourdion
-* Tabs
-* Steps
-* Infographic
-* Social Media
+## Install
+```
+npm inst
+```
 
-### Layout
-* Layout Full Width
-* Layout Container
-* Layout Grid
+Copy ./app/.env.example to .env and change if needed
 
-### Sepcial
-* Navigation
-* Avatar
-* Profile menu
-* Search
+Change settings in ./cms/config/database.js
+
+Optional:
+Install MySQL or MariaDB
+Alternatively Strapi can use a SQLite (not suitable for production)
+
+### Run locally
+```
+npm run dev
+```
+
+### Build for production
+```
+cd ./app
+npm run build
+
+cd ../cms
+npm run strapi build
+```
+
+### Run in production
+I recommend using pm2
+
+```
+pm2 start ./app/build/index.js
+pm2 start ./cms/server.js
+```
+
+You can
+```
+pm2 save
+```
+
+to
+```
+pm2 resurect
+```
+
+if needed.
