@@ -2,8 +2,9 @@
     import type { PageData } from './$types';
     import { PUBLIC_CMS_URL } from '$env/static/public';
     import SvelteMarkdown from 'svelte-markdown';
+    import OtherProjects from '$lib/component/other-projects.svelte';
     export let data: PageData;
-    let project = (data.projects.data[0]) ? data.projects.data[0].attributes : null;
+    $: project = (data.projects.data[0]) ? data.projects.data[0].attributes : null;
 </script>
 
 {#if project}
@@ -55,7 +56,7 @@
         {/if}
     </div>
 
-    <article class="mt-10">
+    <article class="mt-10 lg:pr-10 lg:pl-10 pl-5 pr-5">
         <h1 class="text-3xl font-bold">{project.Name}</h1>
         <h2 class="text-xl mt-2">{project.Summary}</h2>
         {#if project.Description}
@@ -94,6 +95,8 @@
             {/each}
         </div>
     {/if}
+
+    <OtherProjects/>
 
 {:else}
     <h1>Projekt nicht gefunden</h1>

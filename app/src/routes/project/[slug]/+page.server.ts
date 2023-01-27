@@ -5,10 +5,11 @@ export const load: PageServerLoad = async ({ params }) => {
 
   let project = Client(
     `query {
-      projects (filters: { Name: { eq: "${params.name}" } }) {
+      projects (filters: { Slug: { eq: "${params.slug}" } }) {
         data {
           attributes {
             Name
+            Slug
             Summary
             Semester {
               data {

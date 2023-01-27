@@ -7,10 +7,12 @@
   "options": {},
   "attributes": {
     "Testimonial": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "Name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Avatar": {
       "type": "media",
