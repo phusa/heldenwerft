@@ -2,45 +2,39 @@
 import "../app.css";
 </script>
 <div class="flex flex-col h-screen justify-between">
-<div class="container  ml-auto mr-auto">
+<div class="container ml-auto mr-auto">
     <header>
-    <div class="navbar h-24">
-        <div class="navbar-start">
-            <a href="/">
-                <img src="/logo-euf.svg" alt="" width="200">
-            </a>
-        </div>
-        <div class="navbar-center">
-            <ul class="menu menu-horizontal">
-                <li><a href="/">Organisationen</a></li>
-                <li><a href="/">Studenten</a></li>
-                <li><a href="/project">Projekte</a></li>
-                <li><a href="/">Kontakt</a></li>
-            </ul>
-        </div>
-        <div class="navbar-end">
-            <!-- <div class="form-control">
-                <input type="text" placeholder="Suche" class="input input-bordered" />
-            </div> -->
-            <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-            <div class="dropdown dropdown-end">
-                <label for="" tabindex="0" class="btn btn-ghost btn-circle avatar">
-                    <div class="w-10 rounded-full">
-                        <img src="https://placeimg.com/80/80/people" alt="" />
-                    </div>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
-                <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                    <li>
-                        <a href="/" class="justify-between">
-                            Profil
-                            <span class="badge">Neu</span>
-                        </a>
-                    </li>
-                    <li><a href="/">Einstellungen</a></li>
-                    <li><a href="/">Logout</a></li>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="/">Organisationen</a></li>
+                    <li><a href="/">Studenten</a></li>
+                    <li><a href="/">Kontakt</a></li>
+                </ul>
+              </div>
+              <a href="/" class="">
+                <img src="logo-euf.svg" alt="" width="150">
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a href="/">Organisationen</a></li>
+                  <li><a href="/">Studenten</a></li>
+                  <li><a href="/">Kontakt</a></li>
                 </ul>
             </div>
-        </div>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a href="/"></a></li>
+                  <li><a href="/"></a></li>
+                  <li><a href="/"></a></li>
+                </ul>
+            </div>
+          </div>
     </header>
     <main>
         <slot />
