@@ -28,21 +28,21 @@
 	import Truncate from '$lib/truncate.svelte';
 </script>
 
-<h2 class="text-2xl mt-10">Weitere Projekte</h2>
-<div class="flex flex-wrap justify-between mt-5">
+<h2 class="text-2xl mt-10 pb-5">Weitere Projekte</h2>
+<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-4">
 	{#await projects}
 		<!-- TODO: Spinner -->
 	{:then data}
 		{#each data.projects.data as project}
-			<div class="card w-96 shadow mb-10">
+			<div class="card shadow mb-10">
 				{#if project.attributes.Teaser.data}
-					<figure class="bg-slate-200">
-						<img
-							src="{PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.formats.small.url}"
-							alt=""
-							class="object-contain h-64"
-						/>
-					</figure>
+				<figure class="h-64">
+					<img
+						src="{PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.formats.medium.url}"
+						alt=""
+						class="object-none w-full h-full"
+					/>
+				</figure>
 				{/if}
 				<div class="card-body">
 					<h2 class="card-title">{project.attributes.Name}</h2>

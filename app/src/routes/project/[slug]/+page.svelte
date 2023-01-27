@@ -9,8 +9,10 @@
 
 {#if project}
     <figure class="h-64 overflow-hidden">
-        {#if project.Teaser}
+        {#if project.Teaser.data}
             <img src="{PUBLIC_CMS_URL}{project.Teaser.data.attributes.formats.large.url}" alt="" class="w-full -mt-[35%]"/>
+        {:else}
+        <!-- TODO: generic place holder image -->
         {/if}
     </figure>
 
@@ -80,7 +82,7 @@
         </div>
     {/each}
 
-    {#if project.Media}
+    {#if project.Media.data}
         <div class="carousel mt-20">
             {#each project.Media.data as pic}
                 <div class="carousel-item h-full">

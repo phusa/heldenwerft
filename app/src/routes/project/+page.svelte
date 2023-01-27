@@ -6,15 +6,15 @@
 </script>
 
 <h2 class="pt-5 pb-5 text-3xl font-bold">Umgesetzte Projekte</h2>
-<div class="flex flex-wrap justify-between">
+<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-4 mt-4">
 	{#each data.projects.data as project}
-		<div class="card w-96 shadow mb-10">
+		<div class="card shadow">
 			{#if project.attributes.Teaser.data}
-				<figure class="bg-slate-200">
+				<figure class="h-64">
 					<img
-						src="{PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.formats.small.url}"
+						src="{PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.formats.medium.url}"
 						alt=""
-						class="object-contain h-64"
+						class="object-none w-full h-full"
 					/>
 				</figure>
 			{/if}
