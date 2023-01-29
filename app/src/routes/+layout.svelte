@@ -2,7 +2,7 @@
 import "../app.css";
 </script>
 <div class="flex flex-col h-screen justify-between">
-<div class="container  ml-auto mr-auto">
+<div class="container ml-auto mr-auto">
     <header>
     <div class="navbar h-24">
         <div class="navbar-start">
