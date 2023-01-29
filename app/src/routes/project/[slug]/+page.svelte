@@ -71,11 +71,11 @@
             <div class="card card-side">
                 {#if testimonial.Avatar.data}
                     <figure>
-                        <img src="{PUBLIC_CMS_URL}{testimonial.Avatar.data.attributes.formats.thumbnail.url}" alt=""  class="mask mask-circle"/>
+                        <img src="{PUBLIC_CMS_URL}{testimonial.Avatar.data.attributes.formats.thumbnail.url}" alt="" class="object-none mask-circle mask"/>
                     </figure>
                 {/if}
-                <div class="card-body">
-                    <p class="text-2xl font-bold">"{testimonial.Testimonial}"</p>
+                <div class="card-body w-1/2">
+                    <p class="text-2xl">"{testimonial.Testimonial}"</p>
                     <p>{testimonial.Name}</p>
                 </div>
             </div>
@@ -94,6 +94,25 @@
                     <img src="{PUBLIC_CMS_URL}{pic.attributes.url}" alt="" />
                 </label>
                 </label>
+            {/each}
+        </div>
+    {/if}
+
+    {#if project.Organisations.data}
+        <div class=" bg-slate-100 mt-20 p-5 justify-center">
+            <h2 class="text-xl">Unterstützte Organisationen</h2>        
+            {#each project.Organisations.data as organisation}
+            <div class="card card-side">
+                {#if organisation.attributes.Logo}
+                    <figure>
+                        <img src="{PUBLIC_CMS_URL}{organisation.attributes.Logo.data.attributes.formats.thumbnail.url}" alt="" class="object-none mask-circle mask"/>
+                    </figure>
+                {/if}
+                <div class="card-body w-1/2">
+                    <h3 class="font-bold">{organisation.attributes.Name}</h3>
+                    <p>{organisation.attributes.Description}</p>
+                </div>
+            </div>
             {/each}
         </div>
     {/if}
