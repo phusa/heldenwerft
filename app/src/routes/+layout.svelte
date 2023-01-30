@@ -15,7 +15,7 @@ import "../app.css";
                 <li><a href="/">Organisationen</a></li>
                 <li><a href="/">Studenten</a></li>
                 <li><a href="/project">Projekte</a></li>
-                <li><a href="/">Kontakt</a></li>
+                <li><a href="/application">Bewerben</a></li>
             </ul>
         </div>
         <div class="navbar-end">
