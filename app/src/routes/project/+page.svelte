@@ -6,5 +6,5 @@
 	export let data: PageData;
 </script>
 
-<h2 class="pt-5 pb-5 text-3xl font-bold">Umgesetzte Projekte</h2>
+<h2 class="pt-5 pb-5 text-3xl">Umgesetzte Projekte</h2>
 <Projects/>

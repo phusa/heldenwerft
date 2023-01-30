@@ -49,29 +49,27 @@
 		<!-- TODO: Spinner -->
 	{:then data}
 		{#each data.projects.data as project}
-			<div class="card shadow rounded-none">
+			<div class="card shadow-md rounded-none">
 				{#if project.attributes.Teaser.data}
-				<figure class="h-64">
+				<figure class="h-64 relative">
 					<img
 						src="{PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.formats.medium.url}"
 						alt=""
 						class="object-none w-full h-full"
 					/>
+					{#if project.attributes.Category.data}
+						<span class="absolute right-3 bottom-3 bg-opacity-60 bg-white font-bold text-primary text-lg px-3 py-0 rounded">{project.attributes.Category.data.attributes.Category}</span>
+					{/if}
 				</figure>
 				{/if}
-				{#if project.attributes.Category.data}
-				<div class="items-center px-6 py-3 bg-primary">
-					<h1 class="text-white text-lg">{project.attributes.Category.data.attributes.Category}</h1>
-				</div>
-				{/if}
 				<div class="card-body">
-					<h2 class="card-title text-2xl font-semibold text-gray-400">{project.attributes.Name}</h2>
+					<h2 class="card-title text-3xl text-gray-400">{project.attributes.Name}</h2>
 					{#if project.attributes.Summary}
 						<div class="text-gray-400"><Truncate text={project.attributes.Summary} /></div>
 					{/if}
 					<div class="card-actions justify-end mt-4">
 						<a href="/project/{project.attributes.Slug}" class="w-full"
-							><button class="btn btn-primary text-white w-full">Zum Projekt</button></a
+							><button class="btn btn-primary w-full">Zum Projekt</button></a
 						>
 					</div>
 				</div>

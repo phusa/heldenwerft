@@ -1,7 +1,7 @@
 
 
 <h1>TODO: Application form</h1>
-
+<!--
 <form method="POST">
     <label>
       Email
@@ -13,3 +13,4 @@
     </label>
     <button>Log in</button>
   </form>
+  -->
