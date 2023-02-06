@@ -194,7 +194,7 @@
 			</div>
 			<div class="w-full mb-16">
 				<div class="text-3xl text-primary text-left leading-tight h-3">“</div>
-				<p class="text-sm text-gray-600 text-center px-5">
+				<p class="text-gray-600 text-center px-5">
 					Es war einfach komplett erfüllend und hat wahnsinnig viel Spaß gemacht.
 				</p>
 				<div class="text-3xl text-primary text-right leading-tight h-3 -mt-3">”</div>
@@ -214,7 +214,7 @@
 			</div>
 			<div class="w-full mb-16">
 				<div class="text-3xl text-primary text-left leading-tight h-3">“</div>
-				<p class="text-sm text-gray-600 text-center px-5">
+				<p class="text-gray-600 text-center px-5">
 					Was mit einem Universitätsprojekt begann, ist für uns schnell zu einer Herzenssache
 					geworden.
 				</p>
@@ -235,7 +235,7 @@
 			</div>
 			<div class="w-full mb-16">
 				<div class="text-3xl text-primary text-left leading-tight h-3">“</div>
-				<p class="text-sm text-gray-600 text-center px-5">
+				<p class="text-gray-600 text-center px-5">
 					Während Management oft mit Profitmaximierung gleichsetzt wird, lernten wir beim SLP auch
 					soziale Verantwortung innerhalb einer Managementtätigkeit zu übernehmen.
 				</p>

@@ -11,7 +11,7 @@ import "../app.css";
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </button>
                 <ul tabindex="-1" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a href="/">Organisationen</a></li>
+                    <li><a href="/organisation">Organisationen</a></li>
                     <li><a href="/">Studenten</a></li>
                     <li><a href="/project">Projekte</a></li>
                     <li><a href="/application">Bewerben</a></li>
@@ -23,7 +23,7 @@ import "../app.css";
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                  <li><a href="/">Organisationen</a></li>
+                  <li><a href="/organisation">Organisationen</a></li>
                   <li><a href="/">Studenten</a></li>
                   <li><a href="/project">Projekte</a></li>
                   <li><a href="/application">Bewerben</a></li>
