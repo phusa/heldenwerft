@@ -247,5 +247,5 @@
 		</div>
 	</div>
 </div>
-<div class="text-center text-4xl font-bold py-8">Umgesetzte Projekte</div>
+<div class="text-center text-4xl font-bold pt-8">Umgesetzte Projekte</div>
 <Projects limit={3} />

@@ -46,10 +46,10 @@
 </div>
 
 <div class="px-4 lg:px-16">
-	<div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
+	<div class="mt-4 md:mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
 		<div class="relative h-100 overflow-hidden lg:h-full">
-			<h1 class="text-3xl font-semibold py-4 lg:py-0">Ihr habt ein Problem?</h1>
-			<h2 class="text-xl mt-1">
+			<h1 class="text-3xl xl:text-4xl font-semibold pt-4">Ihr habt ein Problem?</h1>
+			<h2 class="text-xl xl:text-2xl pt-2">
 				Wir unterstützen euch im Rahmen unseres Service Learning Projektes
 			</h2>
 			<a
@@ -248,7 +248,7 @@
 	</div>
 </div>
 
-<div class="text-center text-3xl font-bold pb-8">Umgesetzte Projekte</div>
+<div class="text-center text-3xl font-bold">Umgesetzte Projekte</div>
 <Projects limit={3} />
 
 <div class="px-4 pb-12 pt-12 mt-4 sm:px-6 lg:px-8 bg-base-200">
@@ -320,5 +320,7 @@
 <div class="px-4 text-center py-8">
 	<h1 class="text-3xl font-bold">Ihre Organisation braucht Unterstützung?</h1>
 	<h2 class="text-2xl pt-3">Dann bewerben Sie sich direkt jetzt online!</h2>
-	<button class="btn btn-primary mt-6">Jetzt Online bewerben</button>
+	<a href="/application">
+		<button class="btn btn-primary mt-6">Jetzt Online bewerben</button>
+	</a>
 </div>
