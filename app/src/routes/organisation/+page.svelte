@@ -251,7 +251,7 @@
 <div class="text-center text-3xl font-bold">Umgesetzte Projekte</div>
 <Projects limit={3} />
 
-<div class="px-4 pb-12 pt-12 mt-4 sm:px-6 lg:px-8 bg-base-200">
+<div class="px-4 pb-12 pt-12 mt-4 sm:px-6 lg:px-8 bg-gray-100">
 	<div class="grid grid-cols-1 gap-8 md:gap-16 lg:grid-cols-3">
 		<div
 			class="relative w-full mx-auto rounded-tl-[50px] rounded-br-[50px] bg-white shadow-lg px-5 pt-5 mt-8 pb-10 text-gray-800"

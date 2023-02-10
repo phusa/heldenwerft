@@ -23,7 +23,7 @@
 	</div>
 </div>
 
-<div class="px-4 py-12 sm:px-6 lg:px-8 bg-base-200 mt-4">
+<div class="px-4 py-12 sm:px-6 lg:px-8 bg-gray-100 mt-4">
 	<div class="grid grid-cols-1 gap-8 md:gap-16 lg:grid-cols-3">
 		<div class="flex items-start">
 			<span class="flex-shrink-0 rounded-lg pt-1">
@@ -136,52 +136,51 @@
 	</div>
 {/if}
 
-<div class="">
-	<div class="grid grid-cols-1 lg:grid-cols-2 mt-4">
-		<div class="relative h-64 overflow-hidden sm:h-12 lg:order-first lg:h-full">
-			<img
-				alt="Helfende Hände"
-				src="helping-hands.jpg"
-				class="absolute inset-0 h-full w-full object-cover"
-			/>
-		</div>
+<section>
+	<div class="mx-auto max-w-screen-xl mt-4">
+		<div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-16">
+			<div class="relative h-64 overflow-hidden sm:h-80 lg:h-full">
+				<img alt="Helfende Hände" src="helping-hands.jpg" class="absolute inset-0 h-full w-full object-cover" />
+			</div>
 
-		<div class="pb-12 lg:py-28 px-3 lg:px-16">
-			<h1 class="text-3xl font-semibold py-4 lg:py-0">Eure Organisation braucht Unterstützung?</h1>
-			<h2 class="text-2xl">Wir helfen euch im Rahmen des Service Learning Projekts!</h2>
-			<p class="mt-4 text-gray-600 dark:text-gray-300">
-				Ihr seid ein gemeinnütziger Verein oder eine gemeinnützige Initiative, die vor einem Problem
-				steht und könntet Unterstützung gebrauchen? Vielleicht können unsere Studierenden euch
-				weiterhelfen!
-			</p>
-			<button class="btn btn-primary mt-6">Weitere Informationen & Onlinebewerbung</button>
+			<div class="lg:py-24 px-4">
+				<h1 class="text-3xl font-semibold">Eure Organisation braucht Unterstützung?</h1>
+				<h2 class="text-2xl">Wir helfen euch im Rahmen des Service Learning Projekts!</h2>
+
+				<p class="mt-4">
+					Ihr seid ein gemeinnütziger Verein oder eine gemeinnützige Initiative, die vor einem Problem
+					steht und könntet Unterstützung gebrauchen? Vielleicht können unsere Studierenden euch
+					weiterhelfen!
+				</p>
+				<button class="btn btn-primary mt-6">Weitere Informationen & Onlinebewerbung</button>
+			</div>
 		</div>
 	</div>
-</div>
-<div class="">
-	<div class="grid grid-cols-1 lg:grid-cols-2 mt-4">
-		<div class="relative h-64 overflow-hidden sm:h-12 lg:order-last lg:h-full">
-			<img
-				alt="Helfende Hände"
-				src="students-tablet.jpg"
-				class="absolute inset-0 h-full w-full object-cover"
-			/>
-		</div>
+</section>
 
-		<div class="pb-12 lg:py-28 px-3 lg:px-16">
-			<h1 class="text-3xl font-semibold py-4 lg:py-0">Soziales Engagement im Studium?</h1>
-			<h2 class="text-2xl">Das geht! Service Learning @Uni Flensburg</h2>
-			<p class="mt-4 text-gray-600 dark:text-gray-300">
-				Als Studierende:r des M.A. IMS an der Europa-Universität Flensburg könnt ihr euch im Rahmen
-				eures Curriculums engagieren, echte Praxiserfahrungen sammeln und dabei etwas Gutes tun.
-				Erfahrt hier mehr über den Studiengang:
-			</p>
-			<button class="btn btn-primary mt-6">Zum Studiengang</button>
+<section>
+	<div class="mx-auto max-w-screen-xl mt-4">
+		<div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-16">
+			<div class="relative h-64 overflow-hidden sm:h-80 lg:h-full lg:order-last">
+				<img alt="Studenten" src="students-tablet.jpg" class="absolute inset-0 h-full w-full object-cover" />
+			</div>
+
+			<div class="lg:py-24 px-4">
+				<h1 class="text-3xl font-semibold">Soziales Engagement im Studium?</h1>
+				<h2 class="text-2xl">Das geht! Service Learning @Uni Flensburg</h2>
+
+				<p class="mt-4">
+					Als Studierende:r des M.A. IMS an der Europa-Universität Flensburg könnt ihr euch im Rahmen
+					eures Curriculums engagieren, echte Praxiserfahrungen sammeln und dabei etwas Gutes tun.
+					Erfahrt hier mehr über den Studiengang:
+				</p>
+				<button class="btn btn-primary mt-6">Zum Studiengang</button>
+			</div>
 		</div>
 	</div>
-  </div>
+</section>
 
-<div class="px-4 pb-12 pt-12 mt-4 sm:px-6 lg:px-8 bg-base-200">
+<div class="px-4 pb-12 pt-12 mt-4 sm:px-6 lg:px-8 bg-gray-100">
 	<div class="grid grid-cols-1 gap-8 md:gap-16 lg:grid-cols-3">
 		<div
 			class="relative w-full mx-auto rounded-tl-[50px] rounded-br-[50px] bg-white shadow-lg px-5 pt-5 mt-8 pb-10 text-gray-800"

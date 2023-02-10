@@ -52,7 +52,7 @@
 			<h2 class="text-xl xl:text-2xl pt-2">
 				Lernen durch Engagement
 			</h2>
-			<a href="https://www.uni-flensburg.de/studium-lehre/studienangebot/management/ma-international-management-studies-bwl" class="link link-primary flex items-center mt-4" target="_blank">
+			<a href="https://www.uni-flensburg.de/studium-lehre/studienangebot/management/ma-international-management-studies-bwl" class="link link-primary flex items-center mt-4" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-primary mr-2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                 </svg>                  
@@ -70,12 +70,94 @@
 			</p>
 		</div>
 	</div>
+
+	<div class="pt-16">
+		<h1 class="text-3xl font-semibold py-4 lg:py-0">Rahmenbedingungen</h1>
+		<h2 class="text-2xl">
+			Hier findet ihr unsere 'Frequently Asked Questions' (kurz FAQ) für Studenten
+		</h2>
+	</div>
+
+	<div class="mt-8 mb-24">
+		<details class="group [&_summary::-webkit-details-marker]:hidden mb-2">
+			<summary class="flex items-center justify-between p-4 cursor-pointer bg-gray-50">
+				<h2 class="font-medium">Lorem ipsum dolor sit amet, consetetur sadipscing elitr?</h2>
+
+				<svg
+					class="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="3"
+						d="M19 9l-7 7-7-7"
+					/>
+				</svg>
+			</summary>
+
+			<p class="px-4 mt-2 mb-6 leading-relaxed">
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			</p>
+		</details>
+		<details class="group [&_summary::-webkit-details-marker]:hidden mb-2">
+			<summary class="flex items-center justify-between p-4 cursor-pointer bg-gray-50">
+				<h2 class="font-medium">Lorem ipsum dolor sit amet, consetetur sadipscing elitr?</h2>
+
+				<svg
+					class="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="3"
+						d="M19 9l-7 7-7-7"
+					/>
+				</svg>
+			</summary>
+
+			<p class="px-4 mt-2 mb-6 leading-relaxed">
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			</p>
+		</details>
+		<details class="group [&_summary::-webkit-details-marker]:hidden mb-2">
+			<summary class="flex items-center justify-between p-4 cursor-pointer bg-gray-50">
+				<h2 class="font-medium">Lorem ipsum dolor sit amet, consetetur sadipscing elitr?</h2>
+
+				<svg
+					class="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="3"
+						d="M19 9l-7 7-7-7"
+					/>
+				</svg>
+			</summary>
+
+			<p class="px-4 mt-2 mb-6 leading-relaxed">
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			</p>
+		</details>
+	</div>
 </div>
 
 <div class="text-center text-3xl font-bold pt-8">Umgesetzte Projekte</div>
 <Projects limit={3} />
 
-<div class="px-4 pb-12 pt-12 mt-4 sm:px-6 lg:px-8 bg-base-200">
+<div class="px-4 pb-12 pt-12 mt-4 sm:px-6 lg:px-8 bg-gray-100">
 	<div class="grid grid-cols-1 gap-8 md:gap-16 lg:grid-cols-3">
 		<div
 			class="relative w-full mx-auto rounded-tl-[50px] rounded-br-[50px] bg-white shadow-lg px-5 pt-5 mt-8 pb-10 text-gray-800"
