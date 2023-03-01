@@ -3,7 +3,7 @@
 </script>
 
 <div class="h-64">
-	<img class="object-cover h-64 w-full" src="/university.jpg" />
+	<img class="object-cover h-64 w-full" src="/university.jpg" alt="Uni"/>
 </div>
 <div class="px-4 py-2 lg:px-16 bg-primary text-white">
 	<div class="grid grid-cols-1 gap-4 lg:grid-cols-3">

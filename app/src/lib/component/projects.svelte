@@ -58,20 +58,21 @@
 						class="object-none w-full h-full"
 					/>
 					{#if project.attributes.Category.data}
-						<span class="absolute right-3 bottom-3 bg-opacity-60 bg-white font-bold text-primary text-lg px-3 py-0 rounded">{project.attributes.Category.data.attributes.Category}</span>
+						<span class="absolute right-3 bottom-3 bg-opacity-60 bg-white font-bold text-grey-600 text-md px-3 py-0 rounded">{project.attributes.Category.data.attributes.Category}</span>
 					{/if}
 				</figure>
 				{/if}
 				<div class="card-body">
-					<h2 class="card-title text-3xl text-gray-400">{project.attributes.Name}</h2>
+					<h2 class="card-title text-3xl text-gray-600">{project.attributes.Name}</h2>
 					{#if project.attributes.Summary}
-						<div class="text-gray-400"><Truncate text={project.attributes.Summary} /></div>
+						<div class="text-gray-600"><Truncate text={project.attributes.Summary} /></div>
 					{/if}
-					<div class="card-actions justify-end mt-4">
-						<a href="/project/{project.attributes.Slug}" class="w-full"
-							><button class="btn btn-primary w-full">Zum Projekt</button></a
-						>
-					</div>
+					
+				</div>
+				<div class="justify-end ml-auto mr-auto mb-4 w-3/4">
+					<a href="/project/{project.attributes.Slug}" class=""
+						><button class="btn btn-primary w-full">Zum Projekt</button></a
+					>
 				</div>
 			</div>
 		{/each}

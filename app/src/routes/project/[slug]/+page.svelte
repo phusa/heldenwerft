@@ -3,6 +3,7 @@
 	import { PUBLIC_CMS_URL } from '$env/static/public';
 	import SvelteMarkdown from 'svelte-markdown';
 	import Projects from '$lib/component/projects.svelte';
+	import Testimonial from '$lib/component/element/testimonial.svelte';
 	export let data: PageData;
 	$: project = data.projects.data[0] ? data.projects.data[0].attributes : null;
 </script>
@@ -102,25 +103,15 @@
 		{/if}
 	</article>
 
-	{#each project.Testimonials as testimonial}
-		<div class="flex bg-slate-100 mt-20 p-5 justify-center">
-			<div class="card card-side">
-				{#if testimonial.Avatar.data}
-					<figure>
-						<img
-							src="{PUBLIC_CMS_URL}{testimonial.Avatar.data.attributes.formats.thumbnail.url}"
-							alt=""
-							class="object-none mask-circle mask"
-						/>
-					</figure>
-				{/if}
-				<div class="card-body w-1/2">
-					<p class="text-2xl">"{testimonial.Testimonial}"</p>
-					<p>{testimonial.Name}</p>
-				</div>
+	{#if project.Testimonials}
+		<div class="px-4 pb-12 pt-12 mt-4 sm:px-6 lg:px-8 bg-gray-100">
+			<div class="grid grid-cols-1 gap-8 md:gap-16 lg:grid-cols-3">
+				{#each project.Testimonials as testimonial}
+					<Testimonial content={testimonial} />
+				{/each}
 			</div>
 		</div>
-	{/each}
+	{/if}
 
 	{#if project.Media.data}
 		<div class="carousel mt-20">
@@ -136,32 +127,33 @@
 				</div>
 				<input type="checkbox" id="pic-modal-{pic.id}" class="modal-toggle" />
 				<label for="pic-modal-{pic.id}" class="modal cursor-pointer">
-					<label class="modal-box relative" for="">
+					<label class="modal-box w-11/12 max-w-5xl" for="">
 						<img src="{PUBLIC_CMS_URL}{pic.attributes.url}" alt="" />
 					</label>
 				</label>
 			{/each}
 		</div>
 	{/if}
-
 	{#if project.Organisations.data}
 		<div class=" bg-slate-100 mt-20 p-5 justify-center">
-			<h2 class="text-xl">Unterstützte Organisationen</h2>
 			{#each project.Organisations.data as organisation}
 				<div class="card card-side">
 					{#if organisation.attributes.Logo}
-						<figure>
+						<figure class="">
 							<img
 								src="{PUBLIC_CMS_URL}{organisation.attributes.Logo.data.attributes.formats.thumbnail
 									.url}"
 								alt=""
-								class="object-none mask-circle mask"
+								class="shadow-lg rounded-full max-w-full h-auto aspect-square align-middle border-4 border-primary"
 							/>
 						</figure>
 					{/if}
 					<div class="card-body w-1/2">
-						<h3 class="font-bold">{organisation.attributes.Name}</h3>
-						<p>{organisation.attributes.Description}</p>
+						<h2 class="text-xl font-bold">Unterstützte Organisation</h2>
+						<p>
+							<span class="font-bold">{organisation.attributes.Name}</span> -
+							{organisation.attributes.Description}
+						</p>
 					</div>
 				</div>
 			{/each}
