@@ -1,38 +1,47 @@
 <script>
-	import Card from "$lib/component/element/card.svelte";
-  let step = 1
+	import Card from '$lib/component/element/card.svelte';
+
+	let application = {
+		organization: '',
+		type_marketing: false
+	};
 </script>
 
-
-<h1>TODO: Application form</h1>
-
+<h1>Projekt vorschlagen</h1>
 
 <ul class="steps steps-vertical lg:steps-horizontal">
-  <li class="step step-primary">Register</li>
-  <li class="step step-primary">Choose plan</li>
-  <li class="step">Purchase</li>
-  <li class="step">Receive Product</li>
+	<li class="step step-primary">xxx</li>
+	<li class="step">xxx</li>
 </ul>
 
-<form method="POST">
+<form method="POST" action="/application">
+	Wie können wir helfen?
 
-  <div class="{(step!=1)?'hidden':''}">
-    step1
-    <label>
-      Name der Organisation
-      <input name="name" type="text">
-    </label>
-    <div on:click={()=>step=2}>weiter</div>
-  </div>
+	<div
+		class="border rounded w-1/3 checked-{application.type_marketing}"
+		on:click={() => {
+			application.type_marketing = !application.type_marketing;
+		}}
+		on:keypress={() => {
+			application.type_marketing = !application.type_marketing;
+		}}
+	>
+		<label for="type-marketing" class="">Marketing & Reichweite</label><br />
+		<input
+			id="type-marketing"
+			name="type_marketing"
+			type="checkbox"
+			class="checkbox border-none"
+			bind:checked={application.type_marketing}
+		/>
+	</div>
 
-  <div class="{(step!=2)?'hidden':''}">
-  step2
-  <label>
-    Password
-    <input name="password" type="password">
-  </label>
-  </div>
-  
-  
-  <button>Log in</button>
+	<button type="submit">Abschicken</button>
 </form>
+
+<style>
+	.checked-true {
+		background-color: #345;
+		color: white;
+	}
+</style>

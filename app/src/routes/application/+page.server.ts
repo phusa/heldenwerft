@@ -1,6 +1,12 @@
 import type { Actions } from './$types';
 import { Client } from '$lib/client';
- 
+
+type application = {
+  organization: string,
+  type_marketing: boolean
+}
+
+
 export const actions = {
   default: async (event) => {
     // TODO log the user in

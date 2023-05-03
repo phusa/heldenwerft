@@ -35,7 +35,7 @@
 
 <script lang="ts">
 	import { PUBLIC_CMS_URL } from '$env/static/public';
-	import Truncate from '$lib/truncate.svelte';
+	import Truncate from '$lib/helper/truncate.svelte';
 	export let limit: Number = 0;
 	export let highlight: boolean = false;
 	const filter: string[] = [];
