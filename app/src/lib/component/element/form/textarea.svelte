@@ -20,11 +20,11 @@
 	}
 </script>
 <div class="grow p-4">
-    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">{element.title}</label>
+    <label for="message" class="block text-sm font-medium text-gray-900">{element.title}</label>
     <textarea
         id="message" 
         rows="4" 
-        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+        class="p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-2xl"
         bind:value={element.value}
         on:change={onChange}
     ></textarea>

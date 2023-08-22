@@ -25,7 +25,7 @@
 
     const getRowType = (type) => {
         if(type == 'selection') {
-            return 'flex flex-row h-48 place-content-center';
+            return 'grid grid-cols-1 gap-4 xs:grid-cols-1 xs:gap-4 xl:grid-cols-3 xl:gap-8 text-center';
         } else if(type == 'textfield') {
             return 'grid grid-cols-1';
         } else if(type == 'fileupload') {

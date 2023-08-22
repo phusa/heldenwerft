@@ -119,71 +119,80 @@
 		unique = {}
 	}
 </script>
-{#key unique}
-	<div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-[#B6B6B6]">
-		<div class="bg-[#345] h-2.5 rounded-full" style="width: {((application.currentStep+1)/application.steps.length)*100}%"></div>
-  	</div>
 
-	<form method="POST" action="/application" on:submit|preventDefault={handleSubmit}>
-	{#each application.steps as {id, title, type, skipable, sections}, i}
-		{#if application.currentStep == id && application.currentStep != application.steps.length-1}
-			<!-- Each page until the summary -->
-			<h2 class="px-4 pt-5 pb-5 text-3xl">{title}</h2>
-			<div class="grid {type == 'sequential' ? 'grid-cols-2' : 'grid-cols-1'}">
-				{#each sections as sect}
-					{#if sect != null}
-						<SectionSwitch {sect}></SectionSwitch>
+{#key unique}
+<br>
+	<form method="POST" action="/application" on:submit|preventDefault={handleSubmit} class="px-4 xl:px-48 mt-12">
+		<div>
+			<span class="block rounded-full bg-gray-200">
+			  <span
+				class="block h-3 rounded-full bg-[#345]"
+				style="width: {((application.currentStep+1)/application.steps.length)*100}%"
+			  ></span>
+			</span>
+		</div>
+		{#each application.steps as {id, title, type, skipable, sections}, i}
+			{#if application.currentStep == id && application.currentStep != application.steps.length-1}
+				<!-- Each page until the summary -->
+				<h2 class="px-4 pt-10 text-3xl">{title}</h2>
+				<br>
+				<div class="grid {type == 'sequential' ? 'grid-cols-2' : 'grid-cols-1'}">
+					{#each sections as sect}
+						{#if sect != null}
+							<SectionSwitch {sect}></SectionSwitch>
+						{/if}
+					{/each}
+				</div>
+			{:else if application.currentStep == id && application.currentStep == application.steps.length-1}
+				<!-- Summary Page -->
+				<div class="pt-4">
+					{#each application.steps as step}
+					{#if application.currentStep != step.id}
+						<p class="font-bold">{step.title}</p>
 					{/if}
+					{#each step.sections as sect}
+						{#if sect != null}
+							{#each sect.elements as el}
+								<p>{(el.title != '' ? el.title + ': ' : '')}{el.value}</p>
+							{/each}
+							<br>
+						{/if}
+					{/each}	
 				{/each}
-			</div>
-		{:else if application.currentStep == id && application.currentStep == application.steps.length-1}
-			<!-- Summary Page -->
-			{#each application.steps as step}
-				{#if application.currentStep != step.id}
-					<p>{step.title}</p>
-				{/if}
-				{#each step.sections as sect}
-					{#if sect != null}
-						{#each sect.elements as el}
-							<p>{(el.title != '' ? el.title + ': ' : '')}{el.value}</p>
-						{/each}
-						<br>
-					{/if}
-				{/each}	
-			{/each}
-		{/if}
-		<!-- Button row at the bottom -->
-		{#if application.currentStep == id}
-			<div class="flex flex-row">
-				<div class="basis-1/8">
-					{#if application.currentStep != 0}
-						<button 
-							class="bg-transparent bg-[#B6B6B6] text-white border-[#B6B6B6] py-2 px-4 border rounded" 
-							type="button" 
-							on:click={handlePreviousEvent()}>
-							Zurück
-						</button>
-					{/if}
 				</div>
-				<div class="grow basis-6/8"></div>
-				<div class="basis-1/8">
-					{#if skipable == true}
+			{/if}
+			<!-- Button row at the bottom -->
+			{#if application.currentStep == id}
+				<div class="flex flex-row pt-8">
+					<div class="basis-1/8">
+						{#if application.currentStep != 0}
+							<button 
+								class="bg-transparent bg-[#B6B6B6] text-white border-[#B6B6B6] py-2 px-4 border rounded" 
+								type="button" 
+								on:click={handlePreviousEvent()}>
+								Zurück
+							</button>
+						{/if}
+					</div>
+					<div class="grow basis-6/8"></div>
+					<div class="basis-1/8">
+						{#if skipable == true}
+							<button 
+								class="bg-transparent text-[#345] py-2 px-4 border border-transparent hover:border-transparent rounded" 
+								type="button"
+								on:click={handleNextEvent()}>
+								Überspringen
+							</button>
+						{/if}
 						<button 
-							class="bg-transparent text-[#345] py-2 px-4 border border-transparent hover:border-transparent rounded" 
-							type="button"
+							class="bg-[#345] text-white font-semibold py-2 px-4 border border-[#345] rounded" 
+							type="{application.currentStep == application.steps.length-1 ? "submit" : "button"}" 
 							on:click={handleNextEvent()}>
-							Überspringen
+							{application.currentStep == application.steps.length-1 ? "Abschicken" : "Weiter"}
 						</button>
-					{/if}
-					<button 
-						class="bg-transparent bg-[#345] text-white font-semibold py-2 px-4 border border-[#345] rounded" 
-						type="{application.currentStep == application.steps.length-1 ? "submit" : "button"}" 
-						on:click={handleNextEvent()}>
-						{application.currentStep == application.steps.length-1 ? "Abschicken" : "Weiter"}
-					</button>
+					</div>
 				</div>
-			</div>
-		{/if}
-	{/each}
+			{/if}
+		{/each}
 	</form>
 {/key}

@@ -48,7 +48,7 @@
 <div class="px-4 lg:px-16">
 	<div class="mt-4 md:mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
 		<div class="relative h-100 overflow-hidden lg:h-full">
-			<h1 class="text-3xl xl:text-4xl font-semibold pt-4">Service Learing Projekt</h1>
+			<h1 class="text-3xl xl:text-4xl font-semibold pt-4">Service Learning Projekt</h1>
 			<h2 class="text-xl xl:text-2xl pt-2">
 				Lernen durch Engagement
 			</h2>

@@ -8,10 +8,7 @@
     };
 </script>
 <div class="grow p-4">
-    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">{element.title}</label>
-    {#if element.description != ''}
-        <p id="helper-checkbox-text" class="text-xs font-normal text-gray-500">{element.description}</p>
-    {/if}
+    <label for="message" class="block mb-2 text-2xl font-medium text-gray-900">{element.title}</label>
     <div class="flex items-center justify-center w-full">
         <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50">
             <div class="flex flex-col items-center justify-center pt-5 pb-6">
