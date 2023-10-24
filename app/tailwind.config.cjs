@@ -2,7 +2,8 @@
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),
@@ -16,7 +17,7 @@ module.exports = {
           secondary: "#f6d860",
           accent: "#37cdbe",
           neutral: "#3d4451",
-          "base-100": "#ffffff",
+          "base-100": "#009CF3",
 
           "--rounded-box": ".3rem", // border radius rounded-box utility class, used in card and other large boxes
           "--rounded-btn": "0.2rem", // border radius rounded-btn utility class, used in buttons and similar element
