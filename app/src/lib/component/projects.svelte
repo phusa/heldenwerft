@@ -44,18 +44,18 @@
 	let filterterString = (filter.length>0 ? '('+filter.join(',')+')' : '');
 </script>
 
-<div class="grid xl:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+<div class="grid xl:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
 	{#await projects(filterterString)}
 		<!-- TODO: Spinner -->
 	{:then data}
 		{#each data.projects.data as project}
-			<div class="card shadow-md rounded-none">
+			<div class="card shadow-md rounded-3xl bg-[#D9D9D9]">
 				{#if project.attributes.Teaser.data}
 				<figure class="h-64 relative">
 					<img
 						src="{PUBLIC_CMS_URL}{project.attributes.Teaser.data.attributes.formats.medium.url}"
 						alt=""
-						class="object-none w-full h-full"
+						class="object-none w-full h-full rounded-top"
 					/>
 					{#if project.attributes.Category.data}
 						<span class="absolute right-3 bottom-3 bg-opacity-60 bg-white font-bold text-grey-600 text-md px-3 py-0 rounded">{project.attributes.Category.data.attributes.Category}</span>
@@ -69,9 +69,9 @@
 					{/if}
 					
 				</div>
-				<div class="justify-end ml-auto mr-auto mb-4 w-3/4">
+				<div class="justify-end ml-auto mr-auto mb-4 w-11/12">
 					<a href="/project/{project.attributes.Slug}" class=""
-						><button class="btn btn-primary w-full">Zum Projekt</button></a
+						><button class="btn bg-[#A6A6A6] rounded-full text-white border-none btn-wide w-full text-2xl normal-case">Projekt ansehen</button></a
 					>
 				</div>
 			</div>

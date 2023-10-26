@@ -3,7 +3,7 @@
 	let playVideo = false;
 </script>
 
-<div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-16 px-16">
+<div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-16 px-4 lg:px-16">
 	<div class="pb-12 pt-24 px-3 lg:px-16">
 		<h1 class="text-3xl font-bold sm:text-4xl text-white">Service Learning:</h1>
 		<h1 class="text-3xl font-bold sm:text-4xl text-white">Lernen durch Engagement</h1>
@@ -23,13 +23,9 @@
 			teilnehmen könnt & welche Projekte wir bereits umgesetzt haben, erfahrt ihr auf diesen Seiten!
 		</p>
 	</div>
-	<div class="">
-		<div class="h-64">
-			<img class="" src="boat.png" alt="" />
-		</div>
-	</div>
+	<img class="object-contain" src="boat.png" alt="" />
 </div>
-<div>
+<div class="overflow-hidden">
 	<svg id="wave" viewBox="0 0 1240 190" version="1.1" xmlns="http://www.w3.org/2000/svg"
 		><path
 			style="transform:translate(-640px, 0);"
@@ -147,19 +143,19 @@
 <svg
 	class="bg-[#4472C4]"
 	id="wave"
-	style="transform:rotate(0deg);"
-	viewBox="0 0 1440 90"
+	style="transform:rotate(deg);"
+	viewBox="0 0 1440 85"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
 	><path
-		style="transform:translate(0, 0px);"
+		style="transform:translate(0px, -10px);"
 		fill="#FFFFFF"
 		d="M0,90L80,81.7C160,73,320,57,480,53.3C640,50,800,60,960,61.7C1120,63,1280,57,1440,55C1600,53,1760,57,1920,48.3C2080,40,2240,20,2400,21.7C2560,23,2720,47,2880,48.3C3040,50,3200,30,3360,25C3520,20,3680,30,3840,31.7C4000,33,4160,27,4320,20C4480,13,4640,7,4800,15C4960,23,5120,47,5280,51.7C5440,57,5600,43,5760,46.7C5920,50,6080,70,6240,78.3C6400,87,6560,83,6720,68.3C6880,53,7040,27,7200,26.7C7360,27,7520,53,7680,61.7C7840,70,8000,60,8160,56.7C8320,53,8480,57,8640,50C8800,43,8960,27,9120,21.7C9280,17,9440,23,9600,25C9760,27,9920,23,10080,18.3C10240,13,10400,7,10560,10C10720,13,10880,27,11040,31.7C11200,37,11360,33,11440,31.7L11520,30L11520,100L11440,100C11360,100,11200,100,11040,100C10880,100,10720,100,10560,100C10400,100,10240,100,10080,100C9920,100,9760,100,9600,100C9440,100,9280,100,9120,100C8960,100,8800,100,8640,100C8480,100,8320,100,8160,100C8000,100,7840,100,7680,100C7520,100,7360,100,7200,100C7040,100,6880,100,6720,100C6560,100,6400,100,6240,100C6080,100,5920,100,5760,100C5600,100,5440,100,5280,100C5120,100,4960,100,4800,100C4640,100,4480,100,4320,100C4160,100,4000,100,3840,100C3680,100,3520,100,3360,100C3200,100,3040,100,2880,100C2720,100,2560,100,2400,100C2240,100,2080,100,1920,100C1760,100,1600,100,1440,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"
 	/></svg
 >
 
 <section class="bg-white">
-	<div class="mx-auto max-w-screen-2xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+	<div class="mx-auto max-w-screen-2xl px-4 py-8 sm:py-12 lg:py-16">
 		<div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
 			<div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full">
 				<img alt="Party" src="sailor.png" class="absolute inset-0 h-full w-full object-cover" />
@@ -193,11 +189,10 @@
 	class="bg-white"
 	id="wave"
 	style="transform:rotate(0deg);"
-	viewBox="0 0 1440 90"
-	version="1.1"
+	viewBox="0 0 1440 85"
 	xmlns="http://www.w3.org/2000/svg"
 	><path
-		style="transform:translate(0, 0px);"
+		style="transform:translate(0, -10px);"
 		fill="#D9D9D9"
 		d="M0,60L80,55C160,50,320,40,480,36.7C640,33,800,37,960,33.3C1120,30,1280,20,1440,13.3C1600,7,1760,3,1920,8.3C2080,13,2240,27,2400,33.3C2560,40,2720,40,2880,33.3C3040,27,3200,13,3360,6.7C3520,0,3680,0,3840,1.7C4000,3,4160,7,4320,21.7C4480,37,4640,63,4800,71.7C4960,80,5120,70,5280,55C5440,40,5600,20,5760,20C5920,20,6080,40,6240,46.7C6400,53,6560,47,6720,43.3C6880,40,7040,40,7200,46.7C7360,53,7520,67,7680,70C7840,73,8000,67,8160,65C8320,63,8480,67,8640,61.7C8800,57,8960,43,9120,46.7C9280,50,9440,70,9600,75C9760,80,9920,70,10080,70C10240,70,10400,80,10560,78.3C10720,77,10880,63,11040,60C11200,57,11360,63,11440,66.7L11520,70L11520,100L11440,100C11360,100,11200,100,11040,100C10880,100,10720,100,10560,100C10400,100,10240,100,10080,100C9920,100,9760,100,9600,100C9440,100,9280,100,9120,100C8960,100,8800,100,8640,100C8480,100,8320,100,8160,100C8000,100,7840,100,7680,100C7520,100,7360,100,7200,100C7040,100,6880,100,6720,100C6560,100,6400,100,6240,100C6080,100,5920,100,5760,100C5600,100,5440,100,5280,100C5120,100,4960,100,4800,100C4640,100,4480,100,4320,100C4160,100,4000,100,3840,100C3680,100,3520,100,3360,100C3200,100,3040,100,2880,100C2720,100,2560,100,2400,100C2240,100,2080,100,1920,100C1760,100,1600,100,1440,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"
 	/></svg
@@ -244,7 +239,7 @@
 	class="bg-[#D9D9D9]"
 	id="wave"
 	style="transform:rotate(0deg);"
-	viewBox="0 0 1440 90"
+	viewBox="0 0 1440 95"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
 	><path
@@ -254,9 +249,9 @@
 	/></svg
 >
 
-<div class="lg:py-12 px-28 bg-white">
+<div class="px-4 py-8 sm:py-12 lg:px-6 xl:px-36 bg-white">
 	<h1 class="text-4xl font-bold text-[#009CF3] pb-8">
-		Soziales Engagement und Praxiserfahrung im Studium?
+		Land in Sicht: das Service Learning Projekt im Kurzvideo
 	</h1>
 	{#if playVideo}
 		<div class="px-2 py-4 lg:py-6 mt-4">
@@ -287,8 +282,117 @@
 	{/if}
 </div>
 
-<div class="text-center text-4xl font-bold pt-8">Umgesetzte Projekte</div>
-<Projects limit={3} />
+<svg
+	class="bg-white"
+	id="wave"
+	style="transform:rotate(0deg);"
+	viewBox="0 0 1440 120"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	><path
+		style="transform:translate(0, 0px); opacity:1"
+		fill="#4472C4"
+		d="M0,52L120,60.7C240,69,480,87,720,78C960,69,1200,35,1440,36.8C1680,39,1920,78,2160,91C2400,104,2640,91,2880,78C3120,65,3360,52,3600,49.8C3840,48,4080,56,4320,58.5C4560,61,4800,56,5040,56.3C5280,56,5520,61,5760,52C6000,43,6240,22,6480,19.5C6720,17,6960,35,7200,47.7C7440,61,7680,69,7920,75.8C8160,82,8400,87,8640,73.7C8880,61,9120,30,9360,34.7C9600,39,9840,78,10080,97.5C10320,117,10560,117,10800,97.5C11040,78,11280,39,11520,23.8C11760,9,12000,17,12240,26C12480,35,12720,43,12960,41.2C13200,39,13440,26,13680,23.8C13920,22,14160,30,14400,41.2C14640,52,14880,65,15120,62.8C15360,61,15600,43,15840,39C16080,35,16320,43,16560,39C16800,35,17040,17,17160,8.7L17280,0L17280,130L17160,130C17040,130,16800,130,16560,130C16320,130,16080,130,15840,130C15600,130,15360,130,15120,130C14880,130,14640,130,14400,130C14160,130,13920,130,13680,130C13440,130,13200,130,12960,130C12720,130,12480,130,12240,130C12000,130,11760,130,11520,130C11280,130,11040,130,10800,130C10560,130,10320,130,10080,130C9840,130,9600,130,9360,130C9120,130,8880,130,8640,130C8400,130,8160,130,7920,130C7680,130,7440,130,7200,130C6960,130,6720,130,6480,130C6240,130,6000,130,5760,130C5520,130,5280,130,5040,130C4800,130,4560,130,4320,130C4080,130,3840,130,3600,130C3360,130,3120,130,2880,130C2640,130,2400,130,2160,130C1920,130,1680,130,1440,130C1200,130,960,130,720,130C480,130,240,130,120,130L0,130Z"
+	/></svg
+>
+<div class="bg-[#4472C4]">
+	<div class="bg-[#4472C4] px-4 lg:px-16">
+		<div class="px-4 pb-12 pt-12 sm:px-6 lg:px-8">
+			<div class="grid grid-cols-1 gap-8 md:gap-16 lg:grid-cols-3">
+				<div
+					class="relative w-full mx-auto rounded-tl-[50px] rounded-br-[50px] bg-white shadow-lg px-5 pt-5 mt-8 pb-10 text-gray-800"
+					style="max-width: 500px"
+				>
+					<div class="w-full pt-1 pb-5">
+						<div class="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
+							<img src="https://randomuser.me/api/portraits/men/15.jpg" alt="" />
+						</div>
+					</div>
+					<div class="w-full mb-16">
+						<div class="text-3xl text-primary text-left leading-tight h-3">“</div>
+						<p class="text-gray-600 text-center px-5">
+							Es war einfach komplett erfüllend und hat wahnsinnig viel Spaß gemacht.
+						</p>
+						<div class="text-3xl text-primary text-right leading-tight h-3 -mt-3">”</div>
+					</div>
+					<div class="absolute bottom-8 right-8">
+						<p class="text-md text-primary font-bold text-center">- Mareike Barner -</p>
+					</div>
+				</div>
+				<div
+					class="relative w-full mx-auto rounded-tl-[50px] rounded-br-[50px] bg-white shadow-lg px-5 pt-5 mt-8 pb-10 text-gray-800"
+					style="max-width: 500px"
+				>
+					<div class="w-full pt-1 pb-5">
+						<div class="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
+							<img src="https://randomuser.me/api/portraits/men/15.jpg" alt="" />
+						</div>
+					</div>
+					<div class="w-full mb-16">
+						<div class="text-3xl text-primary text-left leading-tight h-3">“</div>
+						<p class="text-gray-600 text-center px-5">
+							Was mit einem Universitätsprojekt begann, ist für uns schnell zu einer Herzenssache
+							geworden.
+						</p>
+						<div class="text-3xl text-primary text-right leading-tight h-3 -mt-3">”</div>
+					</div>
+					<div class="absolute bottom-8 right-8">
+						<p class="text-md text-primary font-bold text-center">- Mareike Barner -</p>
+					</div>
+				</div>
+				<div
+					class="relative w-full mx-auto rounded-tl-[50px] rounded-br-[50px] bg-white shadow-lg px-5 pt-5 mt-8 pb-10 text-gray-800"
+					style="max-width: 500px"
+				>
+					<div class="w-full pt-1 pb-5">
+						<div class="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
+							<img src="https://randomuser.me/api/portraits/men/15.jpg" alt="" />
+						</div>
+					</div>
+					<div class="w-full mb-16">
+						<div class="text-3xl text-primary text-left leading-tight h-3">“</div>
+						<p class="text-gray-600 text-center px-5">
+							Während Management oft mit Profitmaximierung gleichsetzt wird, lernten wir beim SLP
+							auch soziale Verantwortung innerhalb einer Managementtätigkeit zu übernehmen.
+						</p>
+						<div class="text-3xl text-primary text-right leading-tight h-3 -mt-3">”</div>
+					</div>
+					<div class="absolute bottom-8 right-8">
+						<p class="text-md text-primary font-bold text-center">- Mareike Barner -</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<style>
-</style>
+<svg
+	class="bg-[#4472C4]"
+	id="wave"
+	style="transform:rotate(deg);"
+	viewBox="0 0 1440 85"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	><path
+		style="transform:translate(0px, -10px);"
+		fill="#FFFFFF"
+		d="M0,90L80,81.7C160,73,320,57,480,53.3C640,50,800,60,960,61.7C1120,63,1280,57,1440,55C1600,53,1760,57,1920,48.3C2080,40,2240,20,2400,21.7C2560,23,2720,47,2880,48.3C3040,50,3200,30,3360,25C3520,20,3680,30,3840,31.7C4000,33,4160,27,4320,20C4480,13,4640,7,4800,15C4960,23,5120,47,5280,51.7C5440,57,5600,43,5760,46.7C5920,50,6080,70,6240,78.3C6400,87,6560,83,6720,68.3C6880,53,7040,27,7200,26.7C7360,27,7520,53,7680,61.7C7840,70,8000,60,8160,56.7C8320,53,8480,57,8640,50C8800,43,8960,27,9120,21.7C9280,17,9440,23,9600,25C9760,27,9920,23,10080,18.3C10240,13,10400,7,10560,10C10720,13,10880,27,11040,31.7C11200,37,11360,33,11440,31.7L11520,30L11520,100L11440,100C11360,100,11200,100,11040,100C10880,100,10720,100,10560,100C10400,100,10240,100,10080,100C9920,100,9760,100,9600,100C9440,100,9280,100,9120,100C8960,100,8800,100,8640,100C8480,100,8320,100,8160,100C8000,100,7840,100,7680,100C7520,100,7360,100,7200,100C7040,100,6880,100,6720,100C6560,100,6400,100,6240,100C6080,100,5920,100,5760,100C5600,100,5440,100,5280,100C5120,100,4960,100,4800,100C4640,100,4480,100,4320,100C4160,100,4000,100,3840,100C3680,100,3520,100,3360,100C3200,100,3040,100,2880,100C2720,100,2560,100,2400,100C2240,100,2080,100,1920,100C1760,100,1600,100,1440,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"
+	/></svg
+>
+
+<div class="px-4 py-8 sm:py-12 lg:px-6 xl:px-36 bg-white">
+	<h1 class="text-4xl font-bold text-[#009CF3] pb-2">Bisher umgesetzte Projekte</h1>
+	<h2 class="text-xl font-bold pb-4">
+		Ihr braucht ein wenig Inspiration? Hier findet ihr eine Auswahl von Projekten, die wir bisher
+		schon umgesetzt haben.
+	</h2>
+	<Projects limit={3} />
+	<div class="flex justify-center">
+		<a href="/project/" class="btn bg-[#009CF3] mt-6 rounded-full text-white border-none w-7/12 normal-case h-16 text-3xl">
+			<button
+				
+				>Alle ansehen!</button
+			></a
+		>
+	</div>
+</div>

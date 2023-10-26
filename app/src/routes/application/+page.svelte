@@ -266,55 +266,133 @@
 	};
 </script>
 
-<div class="h-64">
-	<img class="object-cover h-64 w-full" src="/application.jpg" alt="Uni"/>
+<div class="px-4 py-8 sm:pt-24 lg:px-6 xl:px-32">
+	<h1 class="text-4xl font-bold text-white pb-2">
+		Bewerbungsformular
+	</h1>
+	<h2 class="text-xl font-bold">
+		// Hier wäre noch ein kleiner Beschreibungstext nett. //
+	</h2>
 </div>
-<div class="px-4 py-2 lg:px-16 bg-primary text-white">
-	<div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
-		<div class="flex items-center lg:justify-center">
-			<span class="flex-shrink-0 rounded-full bg-white p-2">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="h-8 w-8 stroke-primary">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
-				</svg>
-			</span>
 
-			<div class="ml-4">
-				<h2 class="text-lg font-bold">Lernen durch Engagement</h2>
-			</div>
-		</div>
-
-		<div class="flex items-center lg:justify-center">
-			<span class="flex-shrink-0 rounded-full bg-white p-2">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="h-8 w-8 stroke-primary">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
-				</svg>				
-			</span>
-
-			<div class="ml-4">
-				<h2 class="text-lg font-bold">Einzigartige Projekte</h2>
-			</div>
-		</div>
-
-		<div class="flex items-center lg:justify-center">
-			<span class="flex-shrink-0 rounded-full bg-white p-2">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="h-8 w-8 stroke-primary">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-				</svg>
-			</span>
-
-			<div class="ml-4">
-				<h2 class="text-lg font-bold">Etwas Gutes tun</h2>
+<div>
+	<svg id="wave" viewBox="0 0 1240 180" version="1.1" xmlns="http://www.w3.org/2000/svg"
+		><path
+			style="transform:translate(-640px, 0);"
+			fill="#6DD9FF"
+			d="M0,84L60,91C120,98,240,112,360,105C480,98,600,70,720,70C840,70,960,98,1080,98C1200,98,1320,70,1440,49C1560,28,1680,14,1800,28C1920,42,2040,84,2160,105C2280,126,2400,126,2520,108.5C2640,91,2760,56,2880,56C3000,56,3120,91,3240,91C3360,91,3480,56,3600,38.5C3720,21,3840,21,3960,49C4080,77,4200,133,4320,136.5C4440,140,4560,91,4680,59.5C4800,28,4920,14,5040,28C5160,42,5280,84,5400,108.5C5520,133,5640,140,5760,119C5880,98,6000,49,6120,56C6240,63,6360,126,6480,150.5C6600,175,6720,161,6840,133C6960,105,7080,63,7200,56C7320,49,7440,77,7560,77C7680,77,7800,49,7920,35C8040,21,8160,21,8280,17.5C8400,14,8520,7,8580,3.5L8640,0L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"
+		/><path
+			style="transform:translate(-120px, 50px);"
+			fill="#4472C4"
+			d="M0,21L60,35C120,49,240,77,360,80.5C480,84,600,63,720,49C840,35,960,28,1080,42C1200,56,1320,91,1440,98C1560,105,1680,84,1800,91C1920,98,2040,133,2160,136.5C2280,140,2400,112,2520,115.5C2640,119,2760,154,2880,157.5C3000,161,3120,133,3240,122.5C3360,112,3480,119,3600,101.5C3720,84,3840,42,3960,42C4080,42,4200,84,4320,105C4440,126,4560,126,4680,133C4800,140,4920,154,5040,157.5C5160,161,5280,154,5400,157.5C5520,161,5640,175,5760,150.5C5880,126,6000,63,6120,56C6240,49,6360,98,6480,101.5C6600,105,6720,63,6840,52.5C6960,42,7080,63,7200,84C7320,105,7440,126,7560,140C7680,154,7800,161,7920,140C8040,119,8160,70,8280,63C8400,56,8520,91,8580,108.5L8640,126L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"
+		/></svg
+	>
+	<div class="bg-[#4472C4]">
+		<div class="bg-[#4472C4] px-4 lg:px-16">
+			<div class="grid gap-8 row-gap-5 lg:grid-cols-3">
+				<div class="overflow-hidden">
+					<div
+						class="relative p-5 rounded-sm transition duration-300 transform shadow-sm hover:scale-105 group hover:shadow-xl"
+					>
+						<div class="flex flex-col mb-2 lg:items-center lg:flex-row">
+							<div
+								class="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full lg:mb-0"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#6DD9FF"
+									class="w-10 h-10"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+									/>
+								</svg>
+							</div>
+							<h1 class="font-semibold leading-5 text-3xl text-white">Lernen durch Engagement</h1>
+						</div>
+					</div>
+				</div>
+				<div class="overflow-hidden">
+					<div
+						class="relative p-5 rounded-sm transition duration-300 transform shadow-sm hover:scale-105 group hover:shadow-xl"
+					>
+						<div class="flex flex-col mb-2 lg:items-center lg:flex-row">
+							<div
+								class="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full lg:mb-0"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#6DD9FF"
+									class="w-10 h-10"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
+									/>
+								</svg>
+							</div>
+							<h1 class="font-semibold leading-5 text-3xl text-white">Einzigartige Projekte</h1>
+						</div>
+					</div>
+				</div>
+				<div class="overflow-hidden">
+					<div
+						class="relative p-5 rounded-sm transition duration-300 transform shadow-sm hover:scale-105 group hover:shadow-xl"
+					>
+						<div class="flex flex-col mb-2 lg:items-center lg:flex-row">
+							<div
+								class="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full lg:mb-0"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#6DD9FF"
+									class="w-10 h-10"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+									/>
+								</svg>
+							</div>
+							<h1 class="font-semibold leading-5 text-3xl text-white">Etwas Gutes tun</h1>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="px-4 lg:px-16">
-	<div class="mt-4 md:mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
-		<div class="relative h-100 overflow-hidden lg:h-full">
-			<h1 class="text-3xl xl:text-4xl font-semibold pt-4">Bewerbungsformular</h1>
-		</div>
-	</div>
-	<Application {application}></Application>
-</div>
+<svg
+	class="bg-[#4472C4]"
+	id="wave"
+	style="transform:rotate(deg);"
+	viewBox="0 0 1440 85"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	><path
+		style="transform:translate(0px, -10px);"
+		fill="#FFFFFF"
+		d="M0,90L80,81.7C160,73,320,57,480,53.3C640,50,800,60,960,61.7C1120,63,1280,57,1440,55C1600,53,1760,57,1920,48.3C2080,40,2240,20,2400,21.7C2560,23,2720,47,2880,48.3C3040,50,3200,30,3360,25C3520,20,3680,30,3840,31.7C4000,33,4160,27,4320,20C4480,13,4640,7,4800,15C4960,23,5120,47,5280,51.7C5440,57,5600,43,5760,46.7C5920,50,6080,70,6240,78.3C6400,87,6560,83,6720,68.3C6880,53,7040,27,7200,26.7C7360,27,7520,53,7680,61.7C7840,70,8000,60,8160,56.7C8320,53,8480,57,8640,50C8800,43,8960,27,9120,21.7C9280,17,9440,23,9600,25C9760,27,9920,23,10080,18.3C10240,13,10400,7,10560,10C10720,13,10880,27,11040,31.7C11200,37,11360,33,11440,31.7L11520,30L11520,100L11440,100C11360,100,11200,100,11040,100C10880,100,10720,100,10560,100C10400,100,10240,100,10080,100C9920,100,9760,100,9600,100C9440,100,9280,100,9120,100C8960,100,8800,100,8640,100C8480,100,8320,100,8160,100C8000,100,7840,100,7680,100C7520,100,7360,100,7200,100C7040,100,6880,100,6720,100C6560,100,6400,100,6240,100C6080,100,5920,100,5760,100C5600,100,5440,100,5280,100C5120,100,4960,100,4800,100C4640,100,4480,100,4320,100C4160,100,4000,100,3840,100C3680,100,3520,100,3360,100C3200,100,3040,100,2880,100C2720,100,2560,100,2400,100C2240,100,2080,100,1920,100C1760,100,1600,100,1440,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"
+	/></svg
+>
 
+<section class="bg-white">
+	<div class="mx-auto max-w-screen-2xl px-4 py-8 sm:py-12 lg:py-16">
+		<Application {application}></Application>
+
+	</div>
+</section>
