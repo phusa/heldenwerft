@@ -20,7 +20,7 @@
 			</p>
 		</div>
 		<img
-			class="h-auto max-w-md rounded-3xl"
+			class="h-auto max-w-md rounded-3xl shadow-2xl"
 			src="{PUBLIC_CMS_URL}{project.Teaser.data.attributes.formats.large.url}"
 			alt=""
 		/>
@@ -92,7 +92,9 @@
 										/>
 									</svg>
 								</div>
-								<h1 class="font-semibold leading-5 text-3xl text-white">{project.Students}</h1>
+								<h1 class="font-semibold leading-5 text-3xl text-white">
+									{project.Students} Studierende
+								</h1>
 							</div>
 						</div>
 					</div>
@@ -155,6 +157,32 @@
 		</div>
 	</div>
 
+	<div class="px-4 lg:px-6 xl:px-20 bg-white pt-16">
+		<div class="pt-4">
+			{#if project.Media.data}
+				<div class="carousel bg-white">
+					{#each project.Media.data as pic}
+						<div class="carousel-item h-full">
+							<label for="pic-modal-{pic.id}"
+								><img
+									src="{PUBLIC_CMS_URL}{pic.attributes.formats.small.url}"
+									alt=""
+									class="max-h-60 mr-3"
+								/></label
+							>
+						</div>
+						<input type="checkbox" id="pic-modal-{pic.id}" class="modal-toggle" />
+						<label for="pic-modal-{pic.id}" class="modal cursor-pointer">
+							<label class="modal-box w-11/12 max-w-5xl bg-white" for="">
+								<img src="{PUBLIC_CMS_URL}{pic.attributes.url}" alt="" />
+							</label>
+						</label>
+					{/each}
+				</div>
+			{/if}
+		</div>
+	</div>
+
 	{#if project.Testimonials}
 		<svg
 			class="bg-white"
@@ -196,31 +224,7 @@
 		>
 	{/if}
 
-	<div class="px-4 lg:px-24 bg-white">
-		<div class="pt-8">
-			{#if project.Media.data}
-				<div class="carousel bg-white">
-					{#each project.Media.data as pic}
-						<div class="carousel-item h-full">
-							<label for="pic-modal-{pic.id}"
-								><img
-									src="{PUBLIC_CMS_URL}{pic.attributes.formats.small.url}"
-									alt=""
-									class="max-h-60 mr-3"
-								/></label
-							>
-						</div>
-						<input type="checkbox" id="pic-modal-{pic.id}" class="modal-toggle" />
-						<label for="pic-modal-{pic.id}" class="modal cursor-pointer">
-							<label class="modal-box w-11/12 max-w-5xl bg-white" for="">
-								<img src="{PUBLIC_CMS_URL}{pic.attributes.url}" alt="" />
-							</label>
-						</label>
-					{/each}
-				</div>
-			{/if}
-		</div>
-	</div>
+
 
 	<!-- {#if project.Organisations.data}
 		<div class=" bg-slate-100 mt-20 p-5 justify-center">

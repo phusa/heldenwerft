@@ -49,7 +49,7 @@
 		<!-- TODO: Spinner -->
 	{:then data}
 		{#each data.projects.data as project}
-			<div class="card shadow-md rounded-3xl bg-[#D9D9D9]">
+			<div class="card shadow-lg rounded-3xl bg-white">
 				{#if project.attributes.Teaser.data}
 				<figure class="h-64 relative">
 					<img
@@ -58,7 +58,7 @@
 						class="object-none w-full h-full rounded-top"
 					/>
 					{#if project.attributes.Category.data}
-						<span class="absolute right-3 bottom-3 bg-opacity-60 bg-white font-bold text-grey-600 text-md px-3 py-0 rounded">{project.attributes.Category.data.attributes.Category}</span>
+						<span class="absolute right-3 bottom-3 bg-opacity-60 bg-white font-bold text-black text-md px-3 py-0 rounded">{project.attributes.Category.data.attributes.Category}</span>
 					{/if}
 				</figure>
 				{/if}
