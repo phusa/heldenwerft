@@ -268,11 +268,12 @@
 
 <div class="px-4 py-8 sm:pt-24 lg:px-6 xl:px-32">
 	<h1 class="text-4xl font-bold text-white pb-2">
-		Bewerbungsformular
+		Online-Bewerbung &amp; Kontakt:
 	</h1>
 	<h2 class="text-xl font-bold">
-		// Hier wäre noch ein kleiner Beschreibungstext nett. //
+		Ihr seid eine soziale Organisation, könnt Unterstützung gebrauchen und möchtet euch bei unserem Service Learning Projekt bewerben? Ihr habt Fragen oder möchtet Kontakt aufnehmen?
 	</h2>
+	<p>Auf dieser Seite findet ihr unser Online-Bewerbungstool und die Kontaktdaten des Organisationsteams von der Uni Flensburg.</p>
 </div>
 
 <div>

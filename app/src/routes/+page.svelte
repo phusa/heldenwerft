@@ -23,8 +23,9 @@
 			teilnehmen könnt & welche Projekte wir bereits umgesetzt haben, erfahrt ihr auf diesen Seiten!
 		</p>
 	</div>
-	<img class="object-contain" src="boat.png" alt="" />
+	
 </div>
+
 <div class="overflow-hidden">
 	<svg id="wave" viewBox="0 0 1240 190" version="1.1" xmlns="http://www.w3.org/2000/svg"
 		><path
@@ -41,6 +42,7 @@
 		<div class="bg-[#4472C4] px-4 lg:px-16">
 			<div class="grid gap-8 row-gap-5 lg:grid-cols-3">
 				<div class="overflow-hidden">
+					<img class="object-contain invisible lg:visible absolute mt-[-600px] right-0" src="boat.png" alt=""/>
 					<div
 						class="relative p-5 rounded-sm transition duration-300 transform shadow-sm hover:scale-105 group hover:shadow-xl"
 					>
