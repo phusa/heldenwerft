@@ -6,12 +6,12 @@
   @font-face {
     font-family: RobotoCondensed;
     font-weight: 400;
-    src: url("fonts/static/RobotoCondensed-Regular.ttf") format("truetype");
+    src: url("/fonts/static/RobotoCondensed-Regular.ttf") format("truetype");
   }
   @font-face {
     font-family: RobotoCondensed;
     font-weight: 500;
-    src: url("fonts/static/RobotoCondensed-Bold.ttf") format("truetype");
+    src: url("/fonts/static/RobotoCondensed-Bold.ttf") format("truetype");
   }
   html {
     font-family: RobotoCondensed;
