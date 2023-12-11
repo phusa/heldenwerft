@@ -7,6 +7,7 @@ export const load: PageServerLoad = async ({ params }) => {
     `query {
       projects (filters: { Slug: { eq: "${params.slug}" } }) {
         data {
+          id
           attributes {
             Name
             Slug
@@ -32,18 +33,6 @@ export const load: PageServerLoad = async ({ params }) => {
                 attributes {
                   url
                   formats
-                }
-              }
-            }
-            Testimonials {
-              Name
-              Testimonial
-              Avatar {
-                data {
-                  attributes {
-                    url
-                    formats
-                  }
                 }
               }
             }

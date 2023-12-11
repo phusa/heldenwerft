@@ -41,11 +41,6 @@
       "target": "api::organization.organization",
       "mappedBy": "Projekte"
     },
-    "Testimonials": {
-      "type": "component",
-      "repeatable": true,
-      "component": "element.testimonial-card"
-    },
     "Students": {
       "type": "integer"
     },

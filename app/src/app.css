@@ -20,63 +20,6 @@
 }
 
 /* Markdown CSS that cannot be styled with tailwind */
-
 .markdown p {
     margin-bottom: 1rem;
 }
-
-/* Wave animation */
-.wave {
-    position: absolute;
-    width: 100%;
-    padding-top: 12%;
-    top: -5px;
-    left: 0;
-    background-image: url(/wave.png);
-    background-repeat: repeat-x;
-    background-size: 100%;
-    animation: wave 8s linear infinite;
-  }
-  .wave::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    padding-top: 12%;
-    top: -5px;
-    left: 0;
-    background-image: url(/wave.png);
-    background-repeat: repeat-x;
-    background-size: 100%;
-    opacity: .2;
-    animation: wave-reverse 8s linear infinite;
-  }
-  .wave::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    padding-top: 12%;
-    top: -5px;
-    left: 0;
-    background-image: url(/wave.png);
-    background-repeat: repeat-x;
-    background-size: 100%;
-    opacity: .8;
-    animation-delay: -4s;
-    animation: wave 16s linear infinite;
-  }
-  @keyframes wave {
-    0% {
-      background-position: 0;
-    }
-    100% {
-      background-position: 100vw;
-    }
-  }
-  @keyframes wave-reverse {
-    0% {
-      background-position: 100vw;
-    }
-    100% {
-      background-position: 0;
-    }
-  }
