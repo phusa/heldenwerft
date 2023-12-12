@@ -4,8 +4,12 @@
 	import '../app.css';
 </script>
 
-<Header/>
+<header class="bg-base-100">
+	<Header/>
+</header>
 <main>
 	<slot />
 </main>
-<Footer/>
+<footer class="bg-[#4472C4]">
+	<Footer/>
+</footer>

@@ -1,4 +1,4 @@
-<footer class="footer text-white container ml-auto mr-auto">
+<section class="container ml-auto mr-auto">
 	<div
 		class="text-white w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
 	>
@@ -24,4 +24,4 @@
 			<img class="object-contain h-5 pl-2" src="cgi.png" alt="" />
 		</span>
 	</div>
-</footer>
+</section>

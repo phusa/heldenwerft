@@ -268,7 +268,6 @@
 	</div>
 </section>
 
-
 <Testimonials frontpage={true} />
 
 <section class="container mx-auto p-5">
