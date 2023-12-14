@@ -59,19 +59,19 @@
                 xmlns="http://www.w3.org/2000/svg"
                 ><path
                     style="transform:translate(0, 0px); opacity:1"
-                    fill="#4472C4"
+                    fill="#0c4a6e"
                     d="M0,52L120,60.7C240,69,480,87,720,78C960,69,1200,35,1440,36.8C1680,39,1920,78,2160,91C2400,104,2640,91,2880,78C3120,65,3360,52,3600,49.8C3840,48,4080,56,4320,58.5C4560,61,4800,56,5040,56.3C5280,56,5520,61,5760,52C6000,43,6240,22,6480,19.5C6720,17,6960,35,7200,47.7C7440,61,7680,69,7920,75.8C8160,82,8400,87,8640,73.7C8880,61,9120,30,9360,34.7C9600,39,9840,78,10080,97.5C10320,117,10560,117,10800,97.5C11040,78,11280,39,11520,23.8C11760,9,12000,17,12240,26C12480,35,12720,43,12960,41.2C13200,39,13440,26,13680,23.8C13920,22,14160,30,14400,41.2C14640,52,14880,65,15120,62.8C15360,61,15600,43,15840,39C16080,35,16320,43,16560,39C16800,35,17040,17,17160,8.7L17280,0L17280,130L17160,130C17040,130,16800,130,16560,130C16320,130,16080,130,15840,130C15600,130,15360,130,15120,130C14880,130,14640,130,14400,130C14160,130,13920,130,13680,130C13440,130,13200,130,12960,130C12720,130,12480,130,12240,130C12000,130,11760,130,11520,130C11280,130,11040,130,10800,130C10560,130,10320,130,10080,130C9840,130,9600,130,9360,130C9120,130,8880,130,8640,130C8400,130,8160,130,7920,130C7680,130,7440,130,7200,130C6960,130,6720,130,6480,130C6240,130,6000,130,5760,130C5520,130,5280,130,5040,130C4800,130,4560,130,4320,130C4080,130,3840,130,3600,130C3360,130,3120,130,2880,130C2640,130,2400,130,2160,130C1920,130,1680,130,1440,130C1200,130,960,130,720,130C480,130,240,130,120,130L0,130Z"
                 /></svg
             >
 
-            <section class="bg-[#4472C4]">
+            <section class="bg-sky-900">
                 <div class="container mx-auto p-5">
         
                     <Carousel 
                         let:showPrevPage
                         let:showNextPage
                     >
-                    <button slot="prev" on:click={showPrevPage} class="btn btn-circle mt-auto mb-auto">❮</button>
+                    <button slot="prev" on:click={showPrevPage} class="btn bg-transparent text-white border-white btn-circle mt-auto mb-auto">❮</button>
                     {#each data.testimonials.data as testimonial, index}
                         <div class="p-5">
                             {#if testimonial.attributes.Quote}
@@ -82,7 +82,7 @@
                             {/if}                
                         </div>
                     {/each}
-                    <button slot="next" on:click={showNextPage} class="btn btn-circle mt-auto mb-auto">❯</button>
+                    <button slot="next" on:click={showNextPage} class="btn bg-transparent text-white border-white btn-circle mt-auto mb-auto">❯</button>
                     </Carousel>
 
                 </div>
@@ -90,7 +90,7 @@
 
             <!-- Wave -->
             <svg
-                class="bg-[#4472C4]"
+                class="bg-sky-900"
                 id="wave"
                 style="transform:rotate(deg);"
                 viewBox="0 0 1440 85"

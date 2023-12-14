@@ -5,15 +5,15 @@
 </script>
 
 <!-- Hero -->
-<section class="bg-base-100 text-gray-700">
+<section class="bg-sky-500">
 	<div class="container mx-auto">
 		<div class="flex items-end ml-4 mr-4 pt-12 pb-12">
-			<div class="lg:basis-2/3">
+			<div class="lg:basis-3/6">
 				<h1 class="text-3xl lg:text-4xl text-white">
 					Service Learning:<br />
 					Lernen durch Engagement
 				</h1>
-				<p class="mt-4 font-bold">
+				<p class="mt-4 text-xl">
 					„Service Learning“ verbindet universitäres Lernen mit organisationaler Praxiserfahrung und
 					gesellschaftlichem Engagement.
 				</p>
@@ -23,13 +23,18 @@
 					Herausforderungen kleinerer gemeinnütziger Organisationen, um diese – in enger Abstimmung
 					mit den verschiedenen Organisationen – selber umzusetzen.
 				</p>
-				<p class="mt-4 font-bold">
+				<p class="mt-4">
 					Wie das geht, wie ihr euch als Organisation um Unterstützung bewerben oder als
 					Studierender teilnehmen könnt & welche Projekte wir bereits umgesetzt haben, erfahrt ihr
 					auf diesen Seiten!
 				</p>
+				<div class="mt-4">
+					<button class="btn rounded-full bg-sky-300 border-none hover:text-white">Für Studierende</button>
+					<button class="btn rounded-full bg-sky-300 border-none hover:text-white">Für Organsiationen</button>
+				</div>
 			</div>
-			<div class="basis-1/3 lg:visible invisible">
+			<div class="basis-1/6 lg:visible invisible"></div>
+			<div class="basis-2/6 lg:visible invisible">
 				<div class="-mb-28">
 					<img src="boat.png" alt="" />
 				</div>
@@ -39,21 +44,21 @@
 </section>
 
 <!-- Wave -->
-<div class="md:-mt-4 lg:-mt-12 bg-base-100">
+<div class="md:-mt-4 lg:-mt-12 bg-sky-500">
 	<svg id="wave" viewBox="0 0 1240 190" version="1.1" xmlns="http://www.w3.org/2000/svg"
 		><path
 			style="transform:translate(-640px, 0);"
-			fill="#6DD9FF"
+			fill="#7dd3fc"
 			d="M0,84L60,91C120,98,240,112,360,105C480,98,600,70,720,70C840,70,960,98,1080,98C1200,98,1320,70,1440,49C1560,28,1680,14,1800,28C1920,42,2040,84,2160,105C2280,126,2400,126,2520,108.5C2640,91,2760,56,2880,56C3000,56,3120,91,3240,91C3360,91,3480,56,3600,38.5C3720,21,3840,21,3960,49C4080,77,4200,133,4320,136.5C4440,140,4560,91,4680,59.5C4800,28,4920,14,5040,28C5160,42,5280,84,5400,108.5C5520,133,5640,140,5760,119C5880,98,6000,49,6120,56C6240,63,6360,126,6480,150.5C6600,175,6720,161,6840,133C6960,105,7080,63,7200,56C7320,49,7440,77,7560,77C7680,77,7800,49,7920,35C8040,21,8160,21,8280,17.5C8400,14,8520,7,8580,3.5L8640,0L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"
 		/><path
 			style="transform:translate(-120px, 50px);"
-			fill="#4472C4"
+			fill="#0c4a6e"
 			d="M0,21L60,35C120,49,240,77,360,80.5C480,84,600,63,720,49C840,35,960,28,1080,42C1200,56,1320,91,1440,98C1560,105,1680,84,1800,91C1920,98,2040,133,2160,136.5C2280,140,2400,112,2520,115.5C2640,119,2760,154,2880,157.5C3000,161,3120,133,3240,122.5C3360,112,3480,119,3600,101.5C3720,84,3840,42,3960,42C4080,42,4200,84,4320,105C4440,126,4560,126,4680,133C4800,140,4920,154,5040,157.5C5160,161,5280,154,5400,157.5C5520,161,5640,175,5760,150.5C5880,126,6000,63,6120,56C6240,49,6360,98,6480,101.5C6600,105,6720,63,6840,52.5C6960,42,7080,63,7200,84C7320,105,7440,126,7560,140C7680,154,7800,161,7920,140C8040,119,8160,70,8280,63C8400,56,8520,91,8580,108.5L8640,126L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"
 		/></svg
 	>
 </div>
 
-<section class="bg-[#4472C4] text-white">
+<section class="bg-sky-900 text-white">
 	<div class="container mx-auto">
 		<div class="lg:flex">
 			<div class="basis-1/3">
@@ -64,7 +69,7 @@
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke-width="1.5"
-							stroke="#6DD9FF"
+							stroke="#7dd3fc"
 							class="w-10 h-10"
 						>
 							<path
@@ -90,7 +95,7 @@
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke-width="1.5"
-							stroke="#6DD9FF"
+							stroke="#7dd3fc"
 							class="w-10 h-10"
 						>
 							<path
@@ -116,7 +121,7 @@
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke-width="1.5"
-							stroke="#6DD9FF"
+							stroke="#7dd3fc"
 							class="w-10 h-10"
 						>
 							<path
@@ -140,7 +145,7 @@
 
 <!-- Wave -->
 <svg
-	class="bg-[#4472C4]"
+	class="bg-sky-900"
 	id="wave"
 	style="transform:rotate(deg);"
 	viewBox="0 0 1440 85"
@@ -159,8 +164,8 @@
 	</div>
 
 	<div class="basis-2/3">
-		<h1 class="text-4xl font-bold text-[#009CF3]">Unterstützung für eure Organisation?</h1>
-		<p class="mt-4 font-bold">Bekommt ihr von fleißigen Studierendenteams!</p>
+		<h1 class="text-4xl font-bold text-sky-900">Unterstützung für eure Organisation?</h1>
+		<p class="mt-4 mb-4 text-xl">Bekommt ihr von fleißigen Studierendenteams!</p>
 		<p>
 			Wir helfen gemeinnützigen oder sozialen Organisationen, Vereinen & Initiativen im Rahmen
 			unseres Service Learning Projektes.
@@ -174,7 +179,7 @@
 			Learning Projekt bewerbt, erfahrt ihr bei Klick auf den folgenden Button!
 		</p>
 		<button
-			class="btn bg-[#009CF3] mt-6 rounded-full text-white border-none btn-wide text-xl capitalize"
+			class="btn bg-sky-900 mt-6 rounded-full text-white border-none btn-wide text-xl capitalize"
 			>Mehr erfahren!</button
 		>
 	</div>
@@ -189,18 +194,18 @@
 	xmlns="http://www.w3.org/2000/svg"
 	><path
 		style="transform:translate(0, -10px);"
-		fill="#D9D9D9"
+		fill="#e2e8f0"
 		d="M0,60L80,55C160,50,320,40,480,36.7C640,33,800,37,960,33.3C1120,30,1280,20,1440,13.3C1600,7,1760,3,1920,8.3C2080,13,2240,27,2400,33.3C2560,40,2720,40,2880,33.3C3040,27,3200,13,3360,6.7C3520,0,3680,0,3840,1.7C4000,3,4160,7,4320,21.7C4480,37,4640,63,4800,71.7C4960,80,5120,70,5280,55C5440,40,5600,20,5760,20C5920,20,6080,40,6240,46.7C6400,53,6560,47,6720,43.3C6880,40,7040,40,7200,46.7C7360,53,7520,67,7680,70C7840,73,8000,67,8160,65C8320,63,8480,67,8640,61.7C8800,57,8960,43,9120,46.7C9280,50,9440,70,9600,75C9760,80,9920,70,10080,70C10240,70,10400,80,10560,78.3C10720,77,10880,63,11040,60C11200,57,11360,63,11440,66.7L11520,70L11520,100L11440,100C11360,100,11200,100,11040,100C10880,100,10720,100,10560,100C10400,100,10240,100,10080,100C9920,100,9760,100,9600,100C9440,100,9280,100,9120,100C8960,100,8800,100,8640,100C8480,100,8320,100,8160,100C8000,100,7840,100,7680,100C7520,100,7360,100,7200,100C7040,100,6880,100,6720,100C6560,100,6400,100,6240,100C6080,100,5920,100,5760,100C5600,100,5440,100,5280,100C5120,100,4960,100,4800,100C4640,100,4480,100,4320,100C4160,100,4000,100,3840,100C3680,100,3520,100,3360,100C3200,100,3040,100,2880,100C2720,100,2560,100,2400,100C2240,100,2080,100,1920,100C1760,100,1600,100,1440,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"
 	/></svg
 >
 
-<section class="bg-[#D9D9D9]">
+<section class="bg-slate-200">
 	<div class="container mx-auto md:flex p-5">
 		<div class="basis-2/3">
-			<h1 class="text-4xl font-bold text-[#009CF3]">
+			<h1 class="text-4xl font-bold text-sky-900">
 				Soziales Engagement und Praxiserfahrung im Studium?
 			</h1>
-			<p class="mt-4 font-bold">Bekommt ihr im Service Learning Projekt!</p>
+			<p class="mt-4 mb-4 text-xl">Bekommt ihr im Service Learning Projekt!</p>
 			<p>
 				Durch die Mitarbeit im Service Learning Projekt werdet ihr selbst zu Helden: ihr seid
 				genau da, wo eure Hilfe gebraucht wird!
@@ -214,7 +219,7 @@
 				erfahrt ihr bei Klick auf den folgenden Button!
 			</p>
 			<button
-				class="btn bg-[#009CF3] mt-6 rounded-full text-white border-none btn-wide text-xl capitalize"
+				class="btn bg-sky-900 mt-6 rounded-full text-white border-none btn-wide text-xl capitalize"
 				>Mehr erfahren!</button
 			>
 		</div>
@@ -226,7 +231,7 @@
 
 <!-- Wave -->
 <svg
-	class="bg-[#D9D9D9]"
+	class="bg-slate-200"
 	id="wave"
 	style="transform:rotate(0deg);"
 	viewBox="0 0 1440 95"
@@ -240,10 +245,11 @@
 >
 
 <section class="container mx-auto p-5">
-	<h1 class="text-4xl font-bold text-[#009CF3]">
-		Land in Sicht: das Service Learning Projekt im Kurzvideo
-	</h1>
-	<div class="pt-8">
+  <h1 class="text-4xl font-bold text-sky-900 pt-4 pb-2">Land in Sicht</h1>
+	<h2 class="text-xl pb-8">
+		Das Service Learning Projekt im Kurzvideo
+	</h2>
+	<div>
 		{#if playVideo}
 			<iframe
 				src="https://www.youtube.com/embed/ZK9tu6__fOM"
@@ -271,8 +277,8 @@
 <Testimonials frontpage={true} />
 
 <section class="container mx-auto p-5">
-	<h1 class="text-4xl font-bold text-[#009CF3] pb-2">Bisher umgesetzte Projekte</h1>
-	<h2 class="text-xl font-bold pb-4">
+	<h1 class="text-4xl font-bold text-sky-900 pt-4 pb-2">Bisher umgesetzte Projekte</h1>
+	<h2 class="text-xl pb-8">
 		Ihr braucht ein wenig Inspiration? Hier findet ihr eine Auswahl von Projekten, die wir bisher
 		schon umgesetzt haben.
 	</h2>
@@ -280,7 +286,7 @@
 	<div class="flex justify-center">
 		<a
 			href="/project/"
-			class="btn bg-[#009CF3] mt-6 rounded-full text-white border-none w-7/12 normal-case h-16 text-3xl"
+			class="btn bg-sky-900 mt-12 rounded-full text-white border-none w-7/12 normal-case h-16 text-3xl"
 		>
 			<button>Alle ansehen!</button></a
 		>

@@ -44,12 +44,12 @@
 	let filterterString = (filter.length>0 ? '('+filter.join(',')+')' : '');
 </script>
 
-<div class="grid xl:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="grid xl:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8">
 	{#await projects(filterterString)}
 		<!-- TODO: Spinner -->
 	{:then data}
 		{#each data.projects.data as project}
-			<div class="card shadow-lg rounded-3xl bg-white">
+			<div class="card rounded-xl bg-slate-100 shadow text-black">
 				{#if project.attributes.Teaser.data}
 				<figure class="h-64 relative">
 					<img
@@ -63,16 +63,16 @@
 				</figure>
 				{/if}
 				<div class="card-body">
-					<h2 class="card-title text-3xl text-gray-600">{project.attributes.Name}</h2>
+					<h2 class="card-title text-2x">{project.attributes.Name}</h2>
 					{#if project.attributes.Summary}
-						<div class="text-gray-600"><Truncate text={project.attributes.Summary} /></div>
+						<div><Truncate text={project.attributes.Summary} /></div>
 					{/if}
 					
 				</div>
 				<div class="justify-end ml-auto mr-auto mb-4 w-11/12">
-					<a href="/project/{project.attributes.Slug}" class=""
-						><button class="btn bg-[#A6A6A6] rounded-full text-white border-none btn-wide w-full text-2xl normal-case">Projekt ansehen</button></a
-					>
+					<a href="/project/{project.attributes.Slug}" class="">
+						<button class="btn bg-white rounde-xl text-black w-full border-none text-xl normal-case hover:text-white">Projekt ansehen</button>
+					</a>
 				</div>
 			</div>
 		{/each}

@@ -1,4 +1,4 @@
-<section class="container ml-auto mr-auto pt-5 pb-5 mt-10">
+<section class="container ml-auto mr-auto pt-5 pb-5">
 	<div class="text-white text-sm flex flex-wrap justify-between">
 		<ul class="flex flex-wrap p-4">
 			<li>
