@@ -1,27 +1,28 @@
 import type { PageServerLoad } from './$types';
-import { env } from '$env/dynamic/public';
+import { Client } from '$lib/client';
 
-export const load: PageServerLoad = async ({ params}) => {
+export const load: PageServerLoad = async ({ params }) => {
 
-  // TODO secure slug against injections
-const query = `query {
-    pages(filters: { Slug: { eq: "${params.slug}" } }) {
-      data {
-        id
-        attributes {
-          Title
-          Slug
-          Body {
-            __typename
-            ... on ComponentElementHero {
-              Strap
-              Title
-              Subtitle
-              Text
-              Image {
-                data {
-                  attributes {
-                    url
+  let page = Client(
+    `query {
+      pages (filters: { Slug: { eq: "${params.slug}" } }) {
+        data {
+          id
+          attributes {
+            Title
+            Slug
+            Body {
+              __typename
+              ... on ComponentElementHero {
+                Strap
+                Title
+                Subtitle
+                Text
+                Image {
+                  data {
+                    attributes {
+                      url
+                    }
                   }
                 }
               }
@@ -29,24 +30,7 @@ const query = `query {
           }
         }
       }
-    }
-  }`;
+    }`);
 
-    const response =await fetch(env.PUBLIC_GQL_URL,{
- 			method: 'POST',
- 			headers: {
-                'Content-Type':'application/json'
- 			},
- 			body: JSON.stringify({
- 				query
- 			})
- 		});
- 
-    const responseJson = await response.json();
-    
-    // TODO secure against empty result / decent error page
-    return(responseJson.data.pages.data);
-
-
-
+    return(page);
 };
