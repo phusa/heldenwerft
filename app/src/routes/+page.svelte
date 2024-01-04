@@ -13,7 +13,7 @@
 					Service Learning:<br />
 					Lernen durch Engagement
 				</h1>
-				<p class="mt-4 text-xl">
+				<p class="mt-4 text-xl ">
 					„Service Learning“ verbindet universitäres Lernen mit organisationaler Praxiserfahrung und
 					gesellschaftlichem Engagement.
 				</p>

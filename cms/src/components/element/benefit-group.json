@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_element_benefit_groups",
+  "info": {
+    "displayName": "BenefitGroup"
+  },
+  "options": {},
+  "attributes": {
+    "Benefit": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.benefit"
+    }
+  }
+}

@@ -22,7 +22,8 @@
         "element.hero",
         "element.reference",
         "element.card",
-        "element.faq"
+        "element.faq",
+        "element.benefit-group"
       ]
     },
     "Slug": {
